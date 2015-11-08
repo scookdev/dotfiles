@@ -1,4 +1,8 @@
 #!/bin/bash
+git clone --recursive https://github.com/m8ss/dotfiles.git ~/.dotfiles
+olddir=`pwd`
+
+cd ~/.dotfiles
 for f in *; do
   BASE=`basename $f`;
   CWD=`pwd`
@@ -20,3 +24,5 @@ for f in *; do
 
   ln -sin "${CWD}/${BASE}" "${HOME}/.${BASE}"
 done
+
+cd $olddir
