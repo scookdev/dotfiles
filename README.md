@@ -5,6 +5,6 @@
 
 ```sh
 
-curl http://git.io/v8BdU | sh
+curl -L  http://git.io/v8BdU | sh
 
 ```
