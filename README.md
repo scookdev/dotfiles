@@ -8,9 +8,7 @@ home directory.
 ### Installation
 
 ```sh
-git clone --recursive https://github.com/m8ss/dotfiles.git ~/.dotfiles
 
-cd ~/.dotfiles
+curl http://git.io/v8BdU | sh
 
-./.install.sh
 ```
