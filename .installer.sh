@@ -1,7 +1,10 @@
+rm -fr ~/.dotfiles  # remove dir if already exists
+
 /usr/bin/env git clone --recursive https://github.com/m8ss/dotfiles.git ~/.dotfiles
 olddir=`pwd`
 
 cd ~/.dotfiles
+
 for f in *; do
   BASE=`basename $f`;
   CWD=`pwd`
