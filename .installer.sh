@@ -21,7 +21,7 @@ for f in *; do
       continue
   fi
 
-  ln -sf "${CWD}/${BASE}" "${HOME}/.${BASE}"
+  ln -fs "${CWD}/${BASE}" "${HOME}/.${BASE}"
 done
 
 cd $olddir
