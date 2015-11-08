@@ -27,13 +27,16 @@ alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rul
         echo
     }
 
+# use MacVim
 alias vim='mvim'
 alias vi='mvim'
+
+
 alias emacs="/usr/local/Cellar/emacs/24.5/bin/emacs"
 alias emacsclient="/usr/local/bin/emacsclient"
 
 alias e="emacsclient -t"
 alias ec="emacsclient -c"
 
-# old alias for emacs location was here...
-# "/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs -nw"
+
+alias chrome=open -a google chrome
