@@ -25,3 +25,7 @@ for f in *; do
 done
 
 cd $olddir
+
+printf "\n"
+printf "Set up and ready to go!"
+printf "\n"
