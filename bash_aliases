@@ -39,4 +39,4 @@ alias e="emacsclient -t"
 alias ec="emacsclient -c"
 
 
-alias chrome=open -a google chrome
+alias chrome="open -a google chrome"
