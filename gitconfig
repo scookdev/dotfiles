@@ -5,8 +5,11 @@
 	email = mace2345@gmail.com
 [core]
 	editor = nano
+	autocrlf = input
 [push]
 	default = simple
 [alias]
 	s = status
 	p = push
+	l = log --oneline --graph --decorate --all
+	c = commit -m
