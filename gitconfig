@@ -1,0 +1,12 @@
+[color]
+	ui = true
+[user]
+	name = m8ss
+	email = mace2345@gmail.com
+[core]
+	editor = nano
+[push]
+	default = simple
+[alias]
+	s = status
+	p = push
