@@ -1,5 +1,4 @@
-#!/bin/bash
-git clone --recursive https://github.com/m8ss/dotfiles.git ~/.dotfiles
+/usr/bin/env git clone --recursive https://github.com/m8ss/dotfiles.git ~/.dotfiles
 olddir=`pwd`
 
 cd ~/.dotfiles
