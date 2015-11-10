@@ -5,6 +5,7 @@
 	email = mace2345@gmail.com
 [core]
 	editor = nano
+	autocrlf = input
 [push]
 	default = simple
 [alias]
