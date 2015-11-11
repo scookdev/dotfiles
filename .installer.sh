@@ -1,8 +1,25 @@
-/usr/bin/env rm -fr ~/.dotfiles  # remove dir if already exists
-
-git clone --recursive https://github.com/m8ss/dotfiles.git ~/.dotfiles
+/usr/bin/env timestamp=$(date +%F)
 olddir=`pwd`
 
+cd ~
+printf "creating backup folder for existing dotfiles"
+printf "backup files will be stored in '${timestamp}_dotfiles'"
+backup_folder="${timestamp}_dotfiles"
+
+for f in *; do
+  BASE=`basename $f`
+  CWD=`pwd`
+
+  # Skip over everything that is not a dotfile in copy process
+  if [[ ("${BASE:0:1}" != ".")]]; then
+    continue
+  fi
+
+  cp -rf .* "${backup_folder}/"
+done
+
+rm -fr ~/.dotfiles  # remove dir if already exists
+git clone --recursive https://github.com/m8ss/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 
 for f in *; do
