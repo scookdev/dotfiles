@@ -38,5 +38,6 @@ alias emacsclient="/usr/local/bin/emacsclient"
 alias e="emacsclient -t"
 alias ec="emacsclient -c"
 
+alias rake="bundle exec rake"
 
 alias chrome="open -a google chrome"
