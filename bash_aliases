@@ -39,7 +39,7 @@ alias e="emacsclient -t"
 alias ec="emacsclient -c"
 
 alias rake="bundle exec rake"
-alias rspec="rspec -fd"
+alias rspec="bundle exec rspec -fd"
+alias guard="bundle exec guard"
 
-
-alias chrome="open -a google chrome"
+alias chrome="open -a google\ chrome"
