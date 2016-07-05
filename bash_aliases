@@ -28,8 +28,8 @@ alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rul
     }
 
 # use MacVim
-alias vim='mvim'
-alias vi='mvim'
+#alias vim='mvim'
+#alias vi='mvim'
 
 
 alias emacs="/usr/local/Cellar/emacs/24.5/bin/emacs"
