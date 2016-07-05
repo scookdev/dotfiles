@@ -1,6 +1,6 @@
 /usr/bin/env rm -fr ~/.dotfiles  # remove dir if already exists
 
-git clone --recursive https://github.com/binarymason/dotfiles.git ~/.dotfiles
+git clone --recursive git@github.com:binarymason/dotfiles.git ~/.dotfiles
 olddir=`pwd`
 
 cd ~/.dotfiles
