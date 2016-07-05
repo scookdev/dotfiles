@@ -1,10 +1,10 @@
 [color]
 	ui = true
 [user]
-	name = m8ss
+	name = binarymason
 	email = mace2345@gmail.com
 [core]
-	editor = nano
+	editor = vim
 	autocrlf = input
 [push]
 	default = simple
