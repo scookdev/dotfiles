@@ -1,0 +1,6 @@
+---
+1.0.0 |checksum:D2Od3BFX9N0l4hH5JKiBilCPCOQHDvY3tKu3tWjWnbk=
+1.0.1 spring:>= 0.9.1|checksum:YddeI0r9efJHlC3KOHw6f//A3pUn8WrqTV/dZv2Cz/w=
+1.0.2 spring:>= 0.9.1|checksum:gmRQk+L5IhbeF8dAxBt60fbX1l8reWt09vm4L3F0aLs=,ruby:>= 0
+1.0.3 spring:>= 0.9.1|checksum:0p0Jd9D9aute2gmcIMpKcIbu0W6Pxtui+C9uTmdklrk=,ruby:>= 0
+1.0.4 spring:>= 0.9.1|checksum:YgLlT6R2dFLjZBRhqDNHZFr0eL9F3dzKlze0OvDdGiw=,ruby:>= 0
