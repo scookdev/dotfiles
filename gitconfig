@@ -1,7 +1,7 @@
 [color]
-	ui = true
+	ui = auto
 [user]
-	name = binarymason
+	name = John Mason
 	email = mace2345@gmail.com
 [core]
 	editor = vim
@@ -11,13 +11,16 @@
 [alias]
 	s = status
 	p = push
-	l = log --oneline --graph --decorate --all
+	l = log --decorate --graph --oneline
 	cm = commit -m
 	co = checkout
         br = branch
         hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
         type = cat-file -t
         dump = cat-file -p
+	prune = "!f() {\
+		    git fetch --prune && git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d; \
+		}; f"
 
 
 [filter "lfs"]

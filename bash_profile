@@ -17,3 +17,12 @@ fi
 
 # Git tab autocompletion
 source ~/.git-completion.bash
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# Go ROOT path
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export HOMEBREW_GITHUB_API_TOKEN=b1aa72c0bc7a8d2d9d0951c9f711fc142486d1f1
+
+# set up autojump
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh

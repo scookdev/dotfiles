@@ -55,3 +55,4 @@
 1.8.3 |checksum:
 2.0.0 |checksum:dfd151d5a010acac142fa798fdab550e6574174e64f1b2e6b39660249bbd99d1,ruby:>= 0,rubygems:>= 0
 2.0.1 |checksum:18b30fc1b286bfc2fdbd40849fac3547e237e771c60b25472e3c5f6edfcaca88,ruby:>= 0,rubygems:>= 0
+2.0.2 |checksum:def9c4d3da29b3d36033d4b019b045520b1ee4968161630f4b422c7e18b6c83b,ruby:~> 2.0,rubygems:>= 0

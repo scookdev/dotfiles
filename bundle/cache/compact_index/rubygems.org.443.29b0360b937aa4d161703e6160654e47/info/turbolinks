@@ -36,3 +36,4 @@
 5.0.0.beta1 turbolinks-source:>= 0|checksum:fb1ded9bf16ce97409d42b28a7406133a85f562b7e4f271b79496bd4de685cb4,ruby:>= 0,rubygems:> 1.3.1
 5.0.0.beta2 turbolinks-source:>= 0|checksum:3be84503f9146c0b8c41b7a26b2ce47620007dbabe370c5bc064031c7bff0991,ruby:>= 0,rubygems:> 1.3.1
 5.0.0 turbolinks-source:~> 5|checksum:ec5e7b1ef2d7706a8e806084c23088ebf99f6c01f88bc5241c4d3f5f4fa0fab6,ruby:>= 0,rubygems:>= 0
+5.0.1 turbolinks-source:~> 5|checksum:60e877f752e21a586c490e9263784b0e02c69498a52e12f60d9f057892977767,ruby:>= 0,rubygems:>= 0

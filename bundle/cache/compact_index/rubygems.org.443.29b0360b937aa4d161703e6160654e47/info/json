@@ -97,3 +97,5 @@
 2.0.0-java |checksum:a4518d389a195b7318f6e67ba10fe5af0b9bbd2a5ba0e0f492062f13f0909395,ruby:>= 0,rubygems:>= 0
 2.0.1 |checksum:cbea6bfe7bf5162c0fb71f6b0ab2c3108ef05bd0ea7b2f98b1ed6d5a8e75bfee,ruby:~> 2.0,rubygems:>= 0
 2.0.1-java |checksum:74a184fe23ee7552e273fb85d0385c6793a35c96a2ecce12cfa00a4cc07aeb30,ruby:>= 0,rubygems:>= 0
+2.0.2 |checksum:400f60ac8282da80764c5d6fbb04c096390a85950bb488652abc1eb993b411d2,ruby:~> 2.0,rubygems:>= 0
+2.0.2-java |checksum:456a19ed1ba523710249eb6ac6f8da65e50198e68b07d2aafb7b5575b68da6c0,ruby:>= 0,rubygems:>= 0

@@ -36,3 +36,5 @@
 1.4.5 nokogiri:>= 0|checksum:
 1.4.6 nokogiri:>= 0|checksum:
 1.4.7 nokogiri:>= 0|checksum:
+1.4.8 nokogiri:>= 0|checksum:c3c3d9ed861529599814ef4b26a86ddca7b270ea3b2578ce5ab01afe37379159,ruby:>= 0,rubygems:>= 0
+1.4.9 nokogiri:>= 0|checksum:7e8f69cc90a4586e939d60d6b884521f37a6dfdc7671751307cd29fef90b87b2,ruby:>= 0,rubygems:>= 0

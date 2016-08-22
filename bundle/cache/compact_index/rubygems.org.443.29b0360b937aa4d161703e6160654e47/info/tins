@@ -69,3 +69,5 @@
 1.10.0 |checksum:aa179b7bec51465b19b5175ff129a114d1262bc9ea1de3bae06859ecb6447546,ruby:>= 2.0,rubygems:>= 0
 1.10.1 |checksum:16c2b411d50f923d8e1af4190151db9bd960eb79c48d4d33b331c7880a03afd0,ruby:>= 2.0,rubygems:>= 0
 1.10.2 |checksum:aa7c664c38c0fba74d3ecc86c7f115625d883075c8b06d71ecf3bf63bc0b8061,ruby:>= 2.0,rubygems:>= 0
+1.11.0 |checksum:b8b9e817007ca0866e1e0e94042beea177c60309ab34a16cce2c76c9c91720d2,ruby:>= 2.0,rubygems:>= 0
+1.12.0 |checksum:f1d874386ab15d32cd9ade46f6dac5a1e7964025d639c908f9a4af15a32dca79,ruby:>= 2.0,rubygems:>= 0

@@ -44,3 +44,4 @@ alias guard="bundle exec guard"
 
 alias chrome="open -a google\ chrome"
 alias refresh_dotfiles="curl -L  http://git.io/v8BdU | sh"
+alias ll="ls -alt"
