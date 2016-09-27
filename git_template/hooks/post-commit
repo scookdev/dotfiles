@@ -17,4 +17,3 @@ DATE_TODAY=$(date +"%Y-%m-%d %H:%M:%S")
 LABEL='code commit'
 
 curl --data "key=$RESCUE_TIME_API_KEY&highlight_date=$DATE_TODAY&description=$MESSAGE&source=$LABEL" https://www.rescuetime.com/anapi/highlights_post
-echo "Updated Rescue Time"
