@@ -32,3 +32,4 @@
 3.0.4 actionpack:>= 4.0,activesupport:>= 4.0,sprockets:>= 3.0.0|checksum:733327d095c59f10471fd760b6c18b3145a6c49fee1c918e2b0fc7ef438b4afb,ruby:>= 1.9.3,rubygems:>= 0
 3.1.0 actionpack:>= 4.0,activesupport:>= 4.0,sprockets:>= 3.0.0|checksum:791789b28ee40aa08f570e071f8243fc782791a1a893f4d5e264354afe748e02,ruby:>= 1.9.3,rubygems:>= 0
 3.1.1 actionpack:>= 4.0,activesupport:>= 4.0,sprockets:>= 3.0.0|checksum:ce566ef1352b7b6be681dbb33b4b716b4eb727443c2cf98d2326a979b40253e9,ruby:>= 1.9.3,rubygems:>= 0
+3.2.0 actionpack:>= 4.0,activesupport:>= 4.0,sprockets:>= 3.0.0|checksum:847423bbd6ac0717d1e97619863fae9447a6adb510162388659c10bbc5dc29ff,ruby:>= 1.9.3,rubygems:>= 0

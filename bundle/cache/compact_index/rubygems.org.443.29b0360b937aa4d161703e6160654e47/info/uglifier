@@ -46,3 +46,4 @@
 2.7.2 execjs:>= 0.3.0,json:>= 1.8.0|checksum:
 3.0.0 execjs:< 3&>= 0.3.0|checksum:b00c78cf5b3f2d3c9727a1cba3ada40cac8b808e753a29465b3852fa3fee4715,ruby:>= 1.9.3,rubygems:>= 0
 3.0.1 execjs:< 3&>= 0.3.0|checksum:d9e75a8b2649ec889f31c2c9c21659be49090c597c76fa2cae89a8e07af1debb,ruby:>= 1.9.3,rubygems:>= 0
+3.0.2 execjs:< 3&>= 0.3.0|checksum:ccc57a83cf6c0aacf41fe728edfdfef75e915e3accf75339e903cc304cd06038,ruby:>= 1.9.3,rubygems:>= 0

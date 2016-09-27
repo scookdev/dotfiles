@@ -282,3 +282,4 @@
 4.2.7.1 actionpack:= 4.2.7.1,actionview:= 4.2.7.1,activejob:= 4.2.7.1,mail:>= 2.5.4&~> 2.5,rails-dom-testing:>= 1.0.5&~> 1.0|checksum:c30280bb13c187e768e575384f526ae3e75276df373d864f3f55e61ab4be8153,ruby:>= 1.9.3,rubygems:>= 0
 5.0.0.1 actionpack:= 5.0.0.1,actionview:= 5.0.0.1,activejob:= 5.0.0.1,mail:>= 2.5.4&~> 2.5,rails-dom-testing:~> 2.0|checksum:8eaabb413c96abdbc74f64cd2dddb80b332f3f48bc509bcf1466ebae8c23053c,ruby:>= 2.2.2,rubygems:>= 0
 3.2.22.4 actionpack:= 3.2.22.4,mail:~> 2.5.4|checksum:5160a47f5f2aa2fabd45db29ee5d348182143864837eaec8d28a875b3378da3e,ruby:>= 1.8.7,rubygems:>= 0
+3.2.22.5 actionpack:= 3.2.22.5,mail:~> 2.5.4|checksum:da6013b477ea4a8665c40009a75d7f2aae1fa5645ec5eba10cc802fc448a0812,ruby:>= 1.8.7,rubygems:>= 0

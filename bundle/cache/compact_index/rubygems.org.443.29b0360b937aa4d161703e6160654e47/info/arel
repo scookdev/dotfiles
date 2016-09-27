@@ -56,3 +56,4 @@
 7.0.0 |checksum:
 7.1.0 |checksum:e8d4a3cdb2363b9a627979375d0fd5c6a463e65b0f07043e51262a720d5fc8d9,ruby:>= 0,rubygems:>= 0
 7.1.1 |checksum:4f6e263b3b7ff825f0a5d3223e8f88d4ff8476bf37db6081a6af387ca076d334,ruby:>= 0,rubygems:>= 0
+7.1.2 |checksum:b6ab82b0e37030ca762fdf2b7ff71133218d1d25100fd97cebccaaf5814a3e97,ruby:>= 0,rubygems:>= 0

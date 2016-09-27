@@ -272,3 +272,4 @@
 4.2.7.1 i18n:~> 0.7,json:>= 1.7.7&~> 1.7,minitest:~> 5.1,thread_safe:>= 0.3.4&~> 0.3,tzinfo:~> 1.1|checksum:241bbcefbd472a2685e84952ca9c0dbec5665121ea88b312602c777ba608babd,ruby:>= 1.9.3,rubygems:>= 0
 5.0.0.1 concurrent-ruby:>= 1.0.2&~> 1.0,i18n:~> 0.7,minitest:~> 5.1,tzinfo:~> 1.1|checksum:496670668a91e9f492830c105a0002ca921138525d5b017372dcfae811c9f2ed,ruby:>= 2.2.2,rubygems:>= 0
 3.2.22.4 i18n:>= 0.6.4&~> 0.6,multi_json:~> 1.0|checksum:1387dfde385c4375e0f8a9f3f5a2ddab3a46c15520ac18d4042897c66233cf07,ruby:>= 1.8.7,rubygems:>= 0
+3.2.22.5 i18n:>= 0.6.4&~> 0.6,multi_json:~> 1.0|checksum:39310c2a67c9db06bc7b0b5c32e5b1f644c517b81fb3353f25fd12cde7c4dd3b,ruby:>= 1.8.7,rubygems:>= 0

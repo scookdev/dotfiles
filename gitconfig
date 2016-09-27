@@ -2,7 +2,7 @@
 	ui = auto
 [user]
 	name = John Mason
-	email = mace2345@gmail.com
+	email = john@johnmason.io
 [core]
 	editor = vim
 	autocrlf = input
@@ -29,3 +29,7 @@
 	clean = git-lfs clean %f
 [credential]
 	helper = cache
+[commit]
+	gpgsign = true
+[init]
+	templatedir = ~/.git_template

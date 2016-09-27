@@ -77,3 +77,4 @@
 0.41.1 parser:< 3.0&>= 2.3.1.1,powerpack:~> 0.1,rainbow:< 3.0&>= 1.99.1,ruby-progressbar:~> 1.7,unicode-display_width:>= 1.0.1&~> 1.0|checksum:7f6c7d8a9a9b4fecbe89a851c38bc549c8d1d4744f57bde383aa33884d4ef661,ruby:>= 1.9.3,rubygems:>= 0
 0.41.2 parser:< 3.0&>= 2.3.1.1,powerpack:~> 0.1,rainbow:< 3.0&>= 1.99.1,ruby-progressbar:~> 1.7,unicode-display_width:>= 1.0.1&~> 1.0|checksum:9ef6e6a8de0ee0f45305beaae85645bb050e443c237ce91ab488268540ca4d09,ruby:>= 1.9.3,rubygems:>= 0
 0.42.0 parser:< 3.0&>= 2.3.1.1,powerpack:~> 0.1,rainbow:< 3.0&>= 1.99.1,ruby-progressbar:~> 1.7,unicode-display_width:>= 1.0.1&~> 1.0|checksum:1bfd76aa1f6e266d459a7776e5de13956595aca4718758f593b5800c9d809918,ruby:>= 2.0.0,rubygems:>= 0
+0.43.0 parser:< 3.0&>= 2.3.1.1,powerpack:~> 0.1,rainbow:< 3.0&>= 1.99.1,ruby-progressbar:~> 1.7,unicode-display_width:>= 1.0.1&~> 1.0|checksum:125e352d5ad65cae73f33572fde0f4793ca8ef7823263935e93ff0c2cd265764,ruby:>= 2.0.0,rubygems:>= 0

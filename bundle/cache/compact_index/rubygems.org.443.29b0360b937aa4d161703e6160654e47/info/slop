@@ -67,3 +67,4 @@
 4.2.1 |checksum:
 4.3.0 |checksum:7f74a4c3bedde075cd24316f88983b97bd9516898873b4867d5817af355d2b51,ruby:>= 2.0.0,rubygems:>= 0
 4.4.0 |checksum:aa4d34b2f8233fe30535947b968fe96d69e5d3e2ff18e2c9d526b580744d6080,ruby:>= 2.0.0,rubygems:>= 0
+4.4.1 |checksum:bd2ef8b4d884819695d94f05cc1f09032e153c5b6260a864c7ea1514048cd01f,ruby:>= 2.0.0,rubygems:>= 0
