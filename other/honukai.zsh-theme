@@ -1,4 +1,4 @@
-# Based on the great ys theme (http://ysmood.org/wp/2013/03/my-ys-terminal-theme/)
+# Based on the great ys theme (http://ysmood.org/wp/2014/03/my-ys-terminal-theme/)
 
 # Machine name.
 function box_name {
@@ -41,22 +41,11 @@ ys_hg_prompt_info() {
 # Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $
 PROMPT="
 %{$fg[blue]%}#%{$reset_color%} \
-%{$terminfo[bold]$fg[green]%}${current_dir}%{$reset_color%}\
+%{$terminfo[bold]$fg[$reset_color]%}${current_dir}%{$reset_color%}\
 ${hg_info}\
 ${git_info} \
 %{$fg[white]%}
 %{$terminfo[bold]$fg[red]%}→ %{$reset_color%}"
-
-if [ "$TMUX" ]; then
-PROMPT="
-%{$FG[135]%}☓%{$reset_color%} \
-%{$terminfo[bold]$FG[135]%}${current_dir}%{$reset_color%}\
-${hg_info}\
-${git_info} \
-%{$fg[white]%}
-%{$terminfo[bold]$FG[245]%}→ %{$reset_color%}"
-fi
-
 
 if [[ "$USER" == "root" ]]; then
 PROMPT="
