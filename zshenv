@@ -1,3 +1,16 @@
+# Jump back into vim with Ctrl-Z
+fancy-ctrl-z () {
+  if [[ $#BUFFER -eq 0 ]]; then
+    BUFFER="fg"
+    zle accept-line
+  else
+    zle push-input
+    zle clear-screen
+  fi
+}
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z
+
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
@@ -30,5 +43,9 @@ alias gca="git commit --amend --no-edit"
 function gppr {
   git fetch --prune && git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -D
 }
+alias gs="git status"
 
 alias be="bundle exec"
+
+function clone(){ git clone git@github.com:$1/$2.git; cd $(basename $2); }
+

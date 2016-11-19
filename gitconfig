@@ -7,7 +7,7 @@
 	editor = vim
 	autocrlf = input
 [push]
-	default = simple
+	default = current
 [alias]
 	s = status
 	p = push
