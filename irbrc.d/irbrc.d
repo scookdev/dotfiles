@@ -1,1 +1,0 @@
-/Users/johnmason/.dotfiles/irbrc.d

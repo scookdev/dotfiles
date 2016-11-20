@@ -1,6 +1,6 @@
-[submodule "emacs.d"]
-	path = emacs.d
-	url = https://github.com/m8ss/emacs.d.git
-[submodule "vim"]
-	path = vim
-	url = https://github.com/m8ss/vim.git
+[submodule "fonts"]
+	path = fonts
+	url = git@github.com:powerline/fonts.git
+[submodule ".vim"]
+	path = .vim
+	url = git@github.com:binarymason/vim.git

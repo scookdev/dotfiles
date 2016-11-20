@@ -1,0 +1,14 @@
+#!/bin/sh
+
+source "/$HOME/.files/lib/globals"
+source "/$DOTFILES_ROOT/lib/functions"
+
+link_safe .gitconfig
+link_safe .gitignore
+link_safe .irbrc
+link_safe .pryrc
+link_safe .Brewfile
+link_safe .gemrc
+link_safe .vim
+
+echo "Symlinks set."
