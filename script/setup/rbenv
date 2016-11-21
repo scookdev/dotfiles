@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# Setup up rbenv
+
+# shellcheck source=lib/globals
+source "$HOME/.files/script/init"
+
+command -v rbenv >/dev/null 2>&1 || { echo >&2 brew install rbenv; eval "$(rbenv init -)"; }
+
+echo "Latest Ruby version is $(latest_ruby)"
+
+if [ "$(rbenv global)" = "system" ]; then
+  brew install ruby-build
+  rbenv install "$(latest_ruby)"
+  rbenv global "$(latest_ruby)"
+  rbenv rehash
+fi
