@@ -1,0 +1,6 @@
+#!/bin/sh
+
+source "$HOME/.files/script/initalize"
+
+brew tap universal-ctags/universal-ctags
+brew install --HEAD universal-ctags
