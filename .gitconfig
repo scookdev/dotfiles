@@ -41,3 +41,7 @@
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
+[github]
+	user = binarymason
+[ghi]
+	token = !security find-internet-password -a binarymason -s github.com -l 'ghi token' -w
