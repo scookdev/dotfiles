@@ -1,8 +1,8 @@
 #!/bin/sh
+#
 # Setup Oh my ZSH
 
-source "/$HOME/.files/lib/globals"
-source "/$DOTFILES_ROOT/lib/functions"
+source "/$HOME/.files/script/init"
 
 if [ ! -d ~/.oh-my-zsh ] && [ "$TRAVIS" != "true" ]; then
   brew install wget

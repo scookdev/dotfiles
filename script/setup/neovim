@@ -1,9 +1,8 @@
 #!/bin/sh
 
-source "/$HOME/.files/lib/globals"
-source "/$DOTFILES_ROOT/lib/functions"
+source "/$HOME/.files/script/init"
 
-if  command -v nvim < /dev/null ; then
+if  [ ! command -v nvim &> /dev/null ] ; then
   brew install neovim/neovim/neovim
 fi
 

@@ -1,9 +1,8 @@
 #!/bin/sh
-
+#
 # Symlinks all dotfiles in DOTFILES_ROOT to home directory
 
-source "/$HOME/.files/lib/globals"
-source "/$DOTFILES_ROOT/lib/functions"
+source "/$HOME/.files/script/init"
 
 for file in $(find $DOTFILES_ROOT -name ".[^.]*" -maxdepth 1); do
   if [ $file != $DOTFILES_ROOT ]; then
