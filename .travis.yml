@@ -1,10 +1,5 @@
 os: osx
 osx_image: xcode8
-before_install:
-  -
-# Empty (to avoid Bundler).
-install:
-  -
 script: script/cibuild
 env:
   SHELL: zsh

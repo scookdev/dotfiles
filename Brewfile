@@ -1,11 +1,10 @@
 brew "zsh"
-brew "vim"
 brew "ack"
-brew "htop"
 brew "autojump"
 brew "reattach-to-user-namespace"
 brew "fzf"
 brew "the_silver_searcher"
+brew "heroku-toolbelt"
 
 brew 'redis', restart_service: true
 brew 'imagemagick'
@@ -18,6 +17,5 @@ cask "iterm2"
 cask "firefox"
 cask "google-chrome"
 cask "harvest"
-cask "heroku-toolbelt"
 cask "virtualbox"
 cask "slack"
