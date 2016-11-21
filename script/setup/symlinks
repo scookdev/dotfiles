@@ -7,7 +7,7 @@ source "/$DOTFILES_ROOT/lib/functions"
 
 for file in $(find $DOTFILES_ROOT -name ".[^.]*" -maxdepth 1); do
   if [ $file != $DOTFILES_ROOT ]; then
-    link_safe $(dot "$file")
+    link_safe $file
   fi
 done
 
