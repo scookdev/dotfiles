@@ -23,7 +23,7 @@ npm upgrade --global
 script/title "Updating Ruby"
 script/setup/rbenv
 
-script/title "Updating Ruby gems"
+script/title "Updating RubyGems software..."
 gem update --system
 
 script/title "Updating Oh My ZSH"
