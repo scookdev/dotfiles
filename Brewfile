@@ -1,4 +1,5 @@
 brew "zsh"
+brew "mas"
 brew "ack"
 brew "autojump"
 brew "reattach-to-user-namespace"
