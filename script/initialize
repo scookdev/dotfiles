@@ -3,5 +3,8 @@
 source "/$HOME/.files/lib/globals"
 source "/$DOTFILES_ROOT/lib/functions"
 
-# Execute all setups that others depend on
-script/setup/homebrew
+info "Check for Homebrew and install if we don't have it"
+if test ! $(which brew); then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+

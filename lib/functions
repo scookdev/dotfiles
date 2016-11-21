@@ -29,3 +29,9 @@ mkdir_safe() {
     mkdir -p "$1"
   fi
 }
+
+# Print a string; example: [..] foo
+info () {
+  printf "\r  [ \033[00;34m..\033[0m ] $1\n"
+}
+
