@@ -1,6 +1,7 @@
 brew "zsh"
 brew "mas"
 brew "ack"
+brew "dockutil"
 brew "autojump"
 brew "reattach-to-user-namespace"
 brew "fzf"
