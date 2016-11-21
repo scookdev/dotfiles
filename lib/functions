@@ -1,17 +1,25 @@
 #!/bin/bash
 
-link_safe() {
-  SOURCE=$1
-  SOURCE_DIR="$PWD"
-  SOURCE_PATH="$SOURCE_DIR/$SOURCE"
+# Returns a string with full path of dotfiles.
+# Usage: dot [FILENAME]
+dot() {
+  # Delete any preceding dots if given. Also filters out "." and ".."
+  FILE=$(echo "$1" | tr -d .)
+  if [ $FILE > /dev/null ]; then
+    echo $DOTFILES_ROOT/.$FILE
+  fi
+}
 
-  DEFAULT_DESTINATION="$HOME/$(basename $SOURCE)"
+link_safe() {
+  SOURCE_PATH=$1
+
+  DEFAULT_DESTINATION=$HOME/$(basename $SOURCE_PATH)
   DESTINATION_PATH=${2:-$DEFAULT_DESTINATION}
 
-  if [[ ! -f "$SOURCE_PATH" ]] || [[ $(ls -l "$SOURCE_PATH" | awk '{print $11}') != "$DESTINATION_PATH" ]]; then
+  if [[ ! -f "$SOURCE_PATH" ]] || [[ "$(readlink $SOURCE_PATH)" != "$DESTINATION_PATH" ]]; then
     echo "Linking $DESTINATION_PATH to $SOURCE_PATH"
     rm -f "$DESTINATION_PATH"
-    ln -s "$SOURCE_PATH" "$DESTINATION_PATH" 
+    ln -s "$SOURCE_PATH" "$DESTINATION_PATH"
   fi
 }
 

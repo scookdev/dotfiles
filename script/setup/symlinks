@@ -1,14 +1,14 @@
 #!/bin/sh
 
+# Symlinks all dotfiles in DOTFILES_ROOT to home directory
+
 source "/$HOME/.files/lib/globals"
 source "/$DOTFILES_ROOT/lib/functions"
 
-link_safe .gitconfig
-link_safe .gitignore
-link_safe .irbrc
-link_safe .pryrc
-link_safe .Brewfile
-link_safe .gemrc
-link_safe .vim
+for file in $(find $DOTFILES_ROOT -name ".[^.]*" -maxdepth 1); do
+  if [ $file != $DOTFILES_ROOT ]; then
+    link_safe $(dot "$file")
+  fi
+done
 
 echo "Symlinks set."

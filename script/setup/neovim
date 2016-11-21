@@ -4,5 +4,5 @@ source "/$HOME/.files/lib/globals"
 source "/$DOTFILES_ROOT/lib/functions"
 
 mkdir_safe ~/.config
-link_safe .vim ~/.config/nvim
-link_safe .vim/vimrc ~/.config/nvim/init.vim
+link_safe $(dot vim) ~/.config/nvim
+link_safe $(dot vim/vimrc) ~/.config/nvim/init.vim

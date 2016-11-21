@@ -12,7 +12,7 @@ fi
 source "$HOME/.files/lib/globals"
 source "$DOTFILES_ROOT/lib/functions"
 
-setups=$(ls "$DOTFILES_ROOT/script/setup/")
+setups=($(ls "$DOTFILES_ROOT/script/setup/"))
 
 for setup in "${setups[@]}"; do
   script/title "Setting up $setup"
