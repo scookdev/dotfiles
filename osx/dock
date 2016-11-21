@@ -51,7 +51,7 @@ done
 sleep 1
 
 # Apps wanted in the dock, in order
-apps=("System Preferences" "Google Chrome" Slack iTerm "Amazon Music")
+apps=("System Preferences" "Google Chrome" Slack iTerm Spotify)
 
 # Re-add the apps we want
 for app in "${apps[@]}"; do

@@ -14,6 +14,8 @@ brew 'postgres'
 brew "git-extras"
 
 cask "dropbox"
+cask "postman"
+cask "spotify"
 cask "caffeine"
 cask "iterm2"
 cask "firefox"
