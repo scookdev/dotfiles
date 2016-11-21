@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# Makes "j" executable for autojump
+
+source "/$HOME/.files/script/init"
+
+if [ ! command -v autojump &> /dev/null ]; then
+  brew install autojump
+fi
+
+# This config is not needed because OH My Zsh handles it for us:
+# [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh

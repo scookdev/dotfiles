@@ -5,14 +5,16 @@
 # shellcheck source=lib/globals
 source "$HOME/.files/script/init"
 
+# Install and initialize rbenv
 command -v rbenv >/dev/null 2>&1 || { echo >&2 brew install rbenv; eval "$(rbenv init -)"; }
 
-echo "Latest Ruby version is $(latest_ruby)"
-
 if [ "$(rbenv global)" = "system" ]; then
-  brew install ruby-build
+  if [ ! command -v ruby-build &> /dev/null ]; then
+    brew install ruby-build
+  fi
 
   if [ ! rbenv versions | grep "$(latest_ruby)" &> /dev/null ]; then
+    echo "Installing latest Ruby version: $(latest_ruby)"
     rbenv install "$(latest_ruby)"
   fi
 
