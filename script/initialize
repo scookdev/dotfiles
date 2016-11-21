@@ -1,0 +1,7 @@
+#!/bin/sh
+
+source "/$HOME/.files/lib/globals"
+source "/$DOTFILES_ROOT/lib/functions"
+
+# Execute all setups that others depend on
+script/setup/homebrew

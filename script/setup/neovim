@@ -3,6 +3,10 @@
 source "/$HOME/.files/lib/globals"
 source "/$DOTFILES_ROOT/lib/functions"
 
+if  command -v nvim < /dev/null ; then
+  brew install neovim/neovim/neovim
+fi
+
 mkdir_safe ~/.config
 link_safe $(dot vim) ~/.config/nvim
 link_safe $(dot vim/vimrc) ~/.config/nvim/init.vim
