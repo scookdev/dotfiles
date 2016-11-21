@@ -47,5 +47,5 @@ alias gs="git status"
 
 alias be="bundle exec"
 
-function clone(){ git clone git@github.com:$1/$2.git; cd $(basename $2); }
+function gclone(){ git clone git@github.com:$1/$2.git; cd $(basename $2); }
 
