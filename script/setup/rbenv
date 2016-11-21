@@ -11,7 +11,11 @@ echo "Latest Ruby version is $(latest_ruby)"
 
 if [ "$(rbenv global)" = "system" ]; then
   brew install ruby-build
-  rbenv install "$(latest_ruby)"
+
+  if [ ! rbenv versions | grep "$(latest_ruby)" &> /dev/null ]; then
+    rbenv install "$(latest_ruby)"
+  fi
+
   rbenv global "$(latest_ruby)"
   rbenv rehash
 fi

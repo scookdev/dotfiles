@@ -30,6 +30,11 @@ mkdir_safe() {
   fi
 }
 
+latest_ruby() {
+  latest_ruby=$(rbenv install -l | grep -v - | tail -1 )
+  echo "$latest_ruby" | tr -d '[:space:]'
+}
+
 # Print a string; example: [..] foo
 info () {
   printf "\r \033[00;34m..\033[0m  $1\n"
