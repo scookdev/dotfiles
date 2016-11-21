@@ -21,7 +21,10 @@ npm update --global
 npm upgrade --global
 
 script/title "Updating Ruby"
-script/setup/ruby
+script/setup/rbenv
+
+script/title "Updating Ruby gems"
+gem update --system
 
 script/title "Updating Oh My ZSH"
 /bin/sh "$ZSH/tools/upgrade.sh"
