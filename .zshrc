@@ -8,7 +8,7 @@ plugins=(
   ruby
   rails
   vi-mode
-  autojump
+  fasd
 )
 
 # Sometimes carriage returns are ^M.  Specify that it's a return

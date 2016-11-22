@@ -1,7 +1,7 @@
 brew "zsh"
 brew "mas"
 brew "dockutil"
-brew "autojump"
+brew "fasd"
 brew "reattach-to-user-namespace"
 brew "fzf"
 brew "tmpreaper"
