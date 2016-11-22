@@ -8,6 +8,13 @@ brew "tmpreaper"
 brew "the_silver_searcher"
 brew "heroku-toolbelt"
 brew "hub"
+brew "tmux"
+brew "go"
+brew "googler"
+brew "docker"
+brew "docker-compose"
+brew "docker-machine"
+brew "automake"
 
 brew 'redis', restart_service: true
 brew 'imagemagick'

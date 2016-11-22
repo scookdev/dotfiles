@@ -35,3 +35,11 @@ alias be="bundle exec"
 gclone(){ git clone git@github.com:$1/$2.git; cd $(basename $2); }
 
 todo(){ ghi open -m "${*}" --claim }
+
+work(){
+  if [ ! $(tmux ls | grep work | cut -c1-4) &> /dev/null ]; then
+    tmux new -s work
+  else
+    tmux attach -t work
+  fi
+}
