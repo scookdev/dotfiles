@@ -10,9 +10,15 @@ alias vimrc="vim ~/.vimrc"
 alias git="hub"
 alias gpr="git pull-request"
 alias gl="git log --decorate --graph --oneline"
+alias gh="log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short"
 alias gp="git push"
-alias gppf="git push --force-with-lease"
+alias gs='git status -sb'
+alias gppf="git push --force-with-lease"  #  "pretty please force push"
+alias gc="git commit"
 alias gca="git commit --amend --no-edit"
+alias gco="git checkout"
+alias gb="git branch"
+alias gd="git diff"
 
 # "Git Nuke" deletes everything but current branch
 alias gnuke="git branch | grep -v '^*' | xargs git branch -D "
@@ -23,7 +29,6 @@ gppr(){
     egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | \
     awk '{print $1}' | xargs git branch -D
 }
-alias gs="git status"
 
 alias be="bundle exec"
 
