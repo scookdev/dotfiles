@@ -10,4 +10,8 @@ for file in $(find $DOTFILES_ROOT -name ".[^.]*" -maxdepth 1); do
   fi
 done
 
+mkdir_safe $HOME/Library/LaunchAgents
+link_safe $DOTFILES_ROOT/Library/LaunchAgents/com.binarymason.tmpreaper.plist
+link_safe $DOTFILES_ROOT/Library/LaunchAgents/com.binarymason.update.plist
+
 echo "Symlinks set."
