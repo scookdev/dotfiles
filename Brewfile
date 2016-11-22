@@ -7,6 +7,7 @@ brew "fzf"
 brew "tmpreaper"
 brew "the_silver_searcher"
 brew "heroku-toolbelt"
+brew "hub"
 
 brew 'redis', restart_service: true
 brew 'imagemagick'

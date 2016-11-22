@@ -7,6 +7,8 @@ alias vi="nvim"
 alias v="nvim"
 alias vimrc="vim ~/.vimrc"
 
+alias git="hub"
+alias gpr="git pull-request"
 alias gl="git log --decorate --graph --oneline"
 alias gp="git push"
 alias gppf="git push --force-with-lease"
