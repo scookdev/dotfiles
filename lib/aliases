@@ -7,10 +7,13 @@ alias vi="nvim"
 alias v="nvim"
 alias vimrc="vim ~/.vimrc"
 
+alias gl="git log --decorate --graph --oneline"
+alias gp="git push"
 alias gppf="git push --force-with-lease"
+alias gca="git commit --amend --no-edit"
+
 # "Git Nuke" deletes everything but current branch
 alias gnuke="git branch | grep -v '^*' | xargs git branch -D "
-alias gca="git commit --amend --no-edit"
 
 gppr(){
   git fetch --prune && git branch -r | \
