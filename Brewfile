@@ -4,6 +4,7 @@ brew "dockutil"
 brew "autojump"
 brew "reattach-to-user-namespace"
 brew "fzf"
+brew "tmpreaper"
 brew "the_silver_searcher"
 brew "heroku-toolbelt"
 

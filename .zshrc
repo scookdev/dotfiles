@@ -17,6 +17,10 @@ stty icrnl
 # Let Zsh use vim bindings
 bindkey -v
 
+# Vi-mode breaks this default configuration.  Adding manually
+bindkey '\e[A' history-search-backward
+bindkey '\e[B' history-search-forward
+
 source $ZSH/oh-my-zsh.sh
 source "$DOTFILES_ROOT/script/setup/shell"
 
