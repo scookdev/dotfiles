@@ -20,5 +20,8 @@ bindkey -v
 source $ZSH/oh-my-zsh.sh
 source "$DOTFILES_ROOT/script/setup/shell"
 
-# aliases are sourced here to use in vim
+# Aliases are sourced here to use in vim
 source $HOME/.zshenv
+
+# Source iterm2 shell integration if available
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
