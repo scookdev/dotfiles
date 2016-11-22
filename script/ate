@@ -1,0 +1,39 @@
+#!/usr/bin/env ruby
+
+require "fileutils"
+
+FOOD_LOG_PATH="#{ENV['HOME']}/Desktop/food-log.txt"
+
+def timestamp
+  Time.now.strftime "%d %B %Y at %H:%M"
+end
+
+def foodstamp(meal, *args)
+  food = args.join(" ")
+ "#{timestamp} \t- #{meal} - \t#{food}\n"
+end
+
+def update_log(meal, *args)
+  statement = foodstamp(meal, args)
+
+  unless File.exists? FOOD_LOG_PATH
+    FileUtils.touch FOOD_LOG_PATH
+  end
+
+  original_file = FOOD_LOG_PATH
+  new_file = FOOD_LOG_PATH + ".tmp"
+
+  File.open(new_file, 'w') do |fo|
+    STDOUT.print "Adding '#{statement.strip.delete("\t")}' to log... "
+    fo.puts statement
+    File.foreach(original_file) do |li|
+      fo.puts li
+    end
+  end
+
+  File.rename(new_file, FOOD_LOG_PATH)
+  STDOUT.print "✓\n"
+end
+
+update_log(ARGV.shift, ARGV)
+

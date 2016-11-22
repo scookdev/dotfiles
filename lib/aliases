@@ -8,6 +8,7 @@ alias j='fasd_cd -d'
 alias nalias="vim ~/.files/lib/aliases"
 
 alias notes="~/Desktop/notes"
+alias ate=${DOTFILES_ROOT}/script/ate
 
 alias vim="nvim"
 alias vi="nvim"
