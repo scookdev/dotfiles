@@ -24,7 +24,7 @@ cask "harvest"
 cask "virtualbox"
 cask "slack"
 cask "github-desktop"
-
+cask "screenhero"
 cask "flux"
 
 # Low priority stuff
