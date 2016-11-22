@@ -1,6 +1,5 @@
 brew "zsh"
 brew "mas"
-brew "ack"
 brew "dockutil"
 brew "autojump"
 brew "reattach-to-user-namespace"
@@ -23,3 +22,13 @@ cask "google-chrome"
 cask "harvest"
 cask "virtualbox"
 cask "slack"
+cask "github-desktop"
+
+cask "flux"
+
+# Low priority stuff
+brew "keybase"
+brew "ack"
+brew "pandoc"
+brew "ghi"
+brew "diff-so-fancy"
