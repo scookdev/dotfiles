@@ -1,8 +1,14 @@
 #!/bin/sh
 
-alias dotfiles="~/.files/script/setups"
-alias setup=${DOTFILES_ROOT}/bin/setup
-alias setups=${DOTFILES_ROOT}/bin/setups
+alias dot="~/.files"
+alias setup=${DOTFILES_ROOT}/script/setup
+
+# List all setups
+setups() {
+  for setup in ${DOTFILES_ROOT}/script/setups/*; do
+    echo $(basename "$setup")
+  done
+}
 
 # fasd same behavior as autojump
 alias j='fasd_cd -d'
