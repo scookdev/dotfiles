@@ -12,7 +12,6 @@ alias ate=${DOTFILES_ROOT}/script/ate
 
 alias vim="nvim"
 alias vi="nvim"
-alias v="nvim"
 alias vimrc="vim ~/.vimrc"
 
 alias git="hub"
