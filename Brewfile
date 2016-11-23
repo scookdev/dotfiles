@@ -16,9 +16,10 @@ brew "docker-compose"
 brew "docker-machine"
 brew "automake"
 
-brew 'redis', restart_service: true
-brew 'imagemagick'
-brew 'postgres'
+brew "redis", restart_service: true
+brew "imagemagick"
+brew "postgres"
+brew "git"
 brew "git-extras"
 
 cask "dropbox"
