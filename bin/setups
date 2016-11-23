@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# Lists out all setups
+# Usage: setups
+
+for setup in script/setups/*; do
+  echo $(basename "$setup")
+done
