@@ -17,16 +17,17 @@ if [[ ! -d "$HOME/.files" ]]; then
 fi
 
 if [ ! -z "$target" ]; then
-  script/setups/"$target"
+  "$DOTFILES_ROOT"/script/setups/"$target"
 else
-  for setup in script/setups/*; do
+  for setup in "$DOTFILES_ROOT"/script/setups/*; do
     # Only execute files not directories
     if [ -f "$setup" ]; then
-      script/title "Setting up $setup"
-      "script/setup/$setup"
+      "$DOTFILES_ROOT"/script/title "Setting up $(basename $setup)"
+      $setup
+      echo "✓"
     fi
   done
 fi
 
-script/title "Setup complete."
+"$DOTFILES_ROOT"/script/title "Setup complete."
 
