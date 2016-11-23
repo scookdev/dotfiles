@@ -10,6 +10,7 @@ if [ ! -z "$target" ]; then
   script/setups/"$target"
 else
   for setup in script/setups/*; do
-    $setup
+    # Only execute files not directories
+    if [ -f "$setup" ]; then $setup; fi
   done
 fi

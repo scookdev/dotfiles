@@ -6,7 +6,7 @@ alias setup=${DOTFILES_ROOT}/script/setup
 # List all setups
 setups() {
   for setup in ${DOTFILES_ROOT}/script/setups/*; do
-    echo $(basename "$setup")
+    if [ -f "$setup" ]; then echo $(basename "$setup"); fi
   done
 }
 
