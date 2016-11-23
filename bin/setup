@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# Setup stuff. Runs all setups unless given an argument
+# Usage is setup [something specific]
+
+target=$1
+
+if [ -z "$target" ]; then
+  script/setups/${target}
+else
+  for setup in script/setups/*; do
+    script/setups/${setup}
+  done
+fi
