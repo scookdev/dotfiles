@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require "fileutils"
+require "date"
 
 FOOD_LOG_PATH="#{ENV['HOME']}/Desktop/food-log.txt"
 
@@ -11,6 +12,20 @@ end
 def foodstamp(meal, *args)
   food = args.join(" ")
  "#{timestamp} \t- #{meal} - \t#{food}\n"
+end
+
+def new_day?(some_statement)
+  statement_date(some_statement) < Date.today
+end
+
+def statement_date(str)
+  date_str = str.split.first(3).join(" ")
+  DateTime.strptime(date_str, "%d %B %Y")
+end
+
+def handle_pretty_line(some_file_path, file_handler)
+  first_line = File.open(some_file_path, &:readline)
+  file_handler.puts "-" * 100 if new_day?(first_line)
 end
 
 def update_log(meal, *args)
@@ -26,6 +41,8 @@ def update_log(meal, *args)
   File.open(new_file, 'w') do |fo|
     STDOUT.print "Adding '#{statement.strip.delete("\t")}' to log... "
     fo.puts statement
+    handle_pretty_line(original_file, fo)
+
     File.foreach(original_file) do |li|
       fo.puts li
     end
