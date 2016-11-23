@@ -3,8 +3,10 @@
 
 ### Installation
 
+(This runs `script/setup`)
+
 ```sh
 
-curl -L  http://git.io/v8BdU | sh
+curl -L https://git.io/v1eCy | sh
 
 ```
