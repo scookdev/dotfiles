@@ -3,14 +3,30 @@
 # Setup stuff. Runs all setups unless given an argument
 # Usage is setup [something specific]
 
+set -e
+
+source "/$HOME/.files/script/init"
+
 target=$1
 
 echo "Starting setup... $target"
+
+# Bootstrap dotfiles if needed
+if [[ ! -d "$HOME/.files" ]]; then
+  git clone https://github.com/binarymason/dotfiles ~/.files
+fi
+
 if [ ! -z "$target" ]; then
   script/setups/"$target"
 else
   for setup in script/setups/*; do
     # Only execute files not directories
-    if [ -f "$setup" ]; then $setup; fi
+    if [ -f "$setup" ]; then
+      script/title "Setting up $setup"
+      "script/setup/$setup"
+    fi
   done
 fi
+
+script/title "Setup complete."
+
