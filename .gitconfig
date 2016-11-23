@@ -31,3 +31,5 @@
 	user = binarymason
 [ghi]
 	token = !security find-internet-password -a binarymason -s github.com -l 'ghi token' -w
+[alias]
+	ctags = !.git/hooks/ctags
