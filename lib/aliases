@@ -1,6 +1,7 @@
 #!/bin/sh
 
-alias setup="~/.files/script/setup"
+alias dotfiles="~/.files/script/setups"
+alias setup=${DOTFILES_ROOT}/bin/setup
 
 # fasd same behavior as autojump
 alias j='fasd_cd -d'

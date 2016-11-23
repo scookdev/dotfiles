@@ -22,7 +22,7 @@ bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
 
 source $ZSH/oh-my-zsh.sh
-source "$DOTFILES_ROOT/script/setup/shell"
+source "$DOTFILES_ROOT/script/setups/shell"
 
 # Aliases are sourced here to use in vim
 source $HOME/.zshenv

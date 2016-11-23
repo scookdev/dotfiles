@@ -5,10 +5,11 @@
 
 target=$1
 
-if [ -z "$target" ]; then
-  script/setups/${target}
+echo "Starting setup... $target"
+if [ ! -z "$target" ]; then
+  script/setups/"$target"
 else
   for setup in script/setups/*; do
-    script/setups/${setup}
+    $setup
   done
 fi

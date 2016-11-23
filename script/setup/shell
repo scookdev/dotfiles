@@ -1,5 +1,0 @@
-#!/bin/sh
-
-${DOTFILES_ROOT}/script/setup/rbenv
-${DOTFILES_ROOT}/script/setup/autojump
-${DOTFILES_ROOT}/script/setup/gpg-agent
