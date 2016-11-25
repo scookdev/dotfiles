@@ -1,6 +1,6 @@
 #!/bin/sh
 
-alias dot="~/.files"
+alias dot="cd ~/.files"
 alias setup=${DOTFILES_ROOT}/script/setup
 
 # List all setups
