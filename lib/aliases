@@ -10,6 +10,11 @@ setups() {
   done
 }
 
+# Open file with whatever current editor is.  Defaults to PWD.
+e() {
+  $EDITOR ${1:-.}
+}
+
 # fasd same behavior as autojump
 alias j='fasd_cd -d'
 
