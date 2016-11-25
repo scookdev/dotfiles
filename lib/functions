@@ -16,7 +16,8 @@ link_safe() {
   DEFAULT_DESTINATION=$HOME/$(basename $SOURCE_PATH)
   DESTINATION_PATH=${2:-$DEFAULT_DESTINATION}
 
-  if [ "$(readlink $DESTINATION_PATH)" != "$SOURCE_PATH" ]; then
+  # A file/dir doesn't already exist or is a symlink that needs an updated path
+  if [ ! -e "$DESTINATION_PATH" ] || [[ -L "$DESTINATION_PATH" && "$(readlink "$DESTINATION_PATH")" != "$SOURCE_PATH" ]]; then
     echo "Linking $DESTINATION_PATH to $SOURCE_PATH"
     rm -f "$DESTINATION_PATH"
     ln -s "$SOURCE_PATH" "$DESTINATION_PATH"
