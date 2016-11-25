@@ -11,7 +11,7 @@ end
 
 def foodstamp(meal, *args)
   food = args.join(" ")
- "#{timestamp} \t- #{meal} - \t#{food}\n"
+ "#{timestamp} \t- #{meal}  \t#{food}\n"
 end
 
 def new_day?(some_statement)
