@@ -1,4 +1,4 @@
-source "/$HOME/.files/lib/globals"
+source "$HOME/.files/lib/globals"
 
 local plugins
 plugins=(
@@ -23,8 +23,8 @@ bindkey '\e[B' history-search-forward
 
 source $ZSH/oh-my-zsh.sh
 source "$DOTFILES_ROOT/script/setups/shell"
+source "$DOTFILES_ROOT/script/setups/aliases"
 
-# Aliases are sourced here to use in vim
 source $HOME/.zshenv
 
 # Source iterm2 shell integration if available

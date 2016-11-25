@@ -1,9 +1,9 @@
 #!/bin/sh
 
-source "/$HOME/.files/lib/globals"
-source "/$DOTFILES_ROOT/lib/functions"
+source "$HOME/.files/lib/globals"
+source "$DOTFILES_ROOT/lib/functions"
 
-if test ! $(which brew); then
+if [ ! command -v brew &> /dev/null ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 

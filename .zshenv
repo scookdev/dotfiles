@@ -1,6 +1,4 @@
-source "/$HOME/.files/lib/globals"
-
-source "$DOTFILES_ROOT/lib/aliases"
+source "$HOME/.files/lib/globals"
 
 # Jump back into vim with Ctrl-Z
 fancy-ctrl-z () {

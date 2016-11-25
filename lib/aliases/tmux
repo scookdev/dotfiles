@@ -1,0 +1,11 @@
+#!/bin/sh
+
+t(){
+  local target=$1
+  if [ ! $(tmux ls | grep "$target" | cut -c1-4) &> /dev/null ]; then
+    tmux new -s "$target"
+  else
+    tmux attach -t "$target"
+  fi
+}
+

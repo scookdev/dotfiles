@@ -1,0 +1,6 @@
+#!/bin/sh
+
+alias vim="nvim"
+alias vi="nvim"
+alias vimrc="vim ~/.vimrc"
+
