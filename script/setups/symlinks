@@ -5,16 +5,15 @@
 source "/$HOME/.files/script/init"
 
 for file in $(find $DOTFILES_ROOT -name ".[^.]*" -maxdepth 1); do
-  if [ $file != $DOTFILES_ROOT ]; then
+  if [ $file != $DOTFILES_ROOT ] && [ $(basename "$file") != ".git" ]; then
     link_safe $file
   fi
 done
 
 mkdir_safe $HOME/Library/LaunchAgents
 tmp_reaper_plist="Library/LaunchAgents/com.binarymason.tmpreaper.plist"
-link_safe $DOTFILES_ROOT/$tmp_reaper_plist $HOME/$tmp_reaper_plist
+link_safe $DOTFILES_ROOT/$tmp_reaper_plist
 
 update_plist="Library/LaunchAgents/com.binarymason.update.plist"
-link_safe $DOTFILES_ROOT/$update_plist $HOME/$update_plist
+link_safe $DOTFILES_ROOT/$update_plist
 
-echo "Symlinks set."

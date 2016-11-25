@@ -16,7 +16,7 @@ link_safe() {
   DEFAULT_DESTINATION=$HOME/$(basename $SOURCE_PATH)
   DESTINATION_PATH=${2:-$DEFAULT_DESTINATION}
 
-  if [[ ! -f "$SOURCE_PATH" ]] || [[ "$(readlink $SOURCE_PATH)" != "$DESTINATION_PATH" ]]; then
+  if [ "$(readlink $DESTINATION_PATH)" != "$SOURCE_PATH" ]; then
     echo "Linking $DESTINATION_PATH to $SOURCE_PATH"
     rm -f "$DESTINATION_PATH"
     ln -s "$SOURCE_PATH" "$DESTINATION_PATH"
