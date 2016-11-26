@@ -24,6 +24,18 @@ link_safe() {
   fi
 }
 
+# Links all dotfiles in root directory that are not in .symlinkignore
+link_dotfiles() {
+  for file in $(find $DOTFILES_ROOT -name ".[^.]*" -maxdepth 1); do
+    filename=$(basename "$file")
+    grep_result=$(grep -w $filename $DOTFILES_ROOT/.symlinkignore)
+
+    if [ ! $grep_result &> /dev/null ]; then
+      link_safe $file
+    fi
+  done
+}
+
 mkdir_safe() {
   if [[ ! -d "$1" ]]; then
     echo "Creating $1 directory"

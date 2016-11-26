@@ -4,11 +4,7 @@
 
 source "/$HOME/.files/script/init"
 
-for file in $(find $DOTFILES_ROOT -name ".[^.]*" -maxdepth 1); do
-  if [ $file != $DOTFILES_ROOT ] && [ $(basename "$file") != ".git" ]; then
-    link_safe $file
-  fi
-done
+link_dotfiles
 
 mkdir_safe $HOME/Library/LaunchAgents
 tmp_reaper_plist="Library/LaunchAgents/com.binarymason.tmpreaper.plist"
