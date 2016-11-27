@@ -1,6 +1,6 @@
-[submodule "fonts"]
-	path = fonts
-	url = git@github.com:powerline/fonts.git
 [submodule ".vim"]
 	path = .vim
 	url = git@github.com:binarymason/vim.git
+[submodule "Library/Fonts"]
+	path = Library/Fonts
+	url = git@github.com:powerline/fonts.git
