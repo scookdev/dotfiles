@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Starts a RescueTime focus session of 25 minutes
+
+source "$HOME/.secrets/ifttt-maker"
+
+event="rescue_time_focus_start"
+
+curl -X POST https://maker.ifttt.com/trigger/${event}/with/key/${IFTTT_MAKER_KEY}
+
+
