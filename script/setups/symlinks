@@ -2,7 +2,7 @@
 #
 # Symlinks all dotfiles in DOTFILES_ROOT to home directory
 
-source "/$HOME/.files/script/init"
+source "$HOME/.files/script/init"
 
 link_dotfiles
 

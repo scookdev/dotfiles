@@ -2,7 +2,7 @@
 #
 # Setup Oh my ZSH
 
-source "/$HOME/.files/script/init"
+source "$HOME/.files/script/init"
 
 if [ ! -d ~/.oh-my-zsh ] && [ "$TRAVIS" != "true" ]; then
   brew install wget

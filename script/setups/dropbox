@@ -2,7 +2,7 @@
 #
 # Installs Dropbox and links Desktop
 
-source "/$HOME/.files/script/init"
+source "$HOME/.files/script/init"
 
 if [ ! $(brew cask list | grep dropbox) &> /dev/null ]; then
   brew cask install dropbox

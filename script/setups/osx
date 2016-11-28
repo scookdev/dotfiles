@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source "/$HOME/.files/script/init"
+source "$HOME/.files/script/init"
 
 OSX_SETUPS=${DOTFILES_ROOT}/osx/*
 

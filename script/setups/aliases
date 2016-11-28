@@ -2,7 +2,7 @@
 #
 # Sources all files in the lib/aliases directory
 
-source "/$HOME/.files/script/init"
+source "$HOME/.files/script/init"
 
 for file in $DOTFILES_ROOT/lib/aliases/*; do
   source $file

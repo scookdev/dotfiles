@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source "/$HOME/.files/script/init"
+source "$HOME/.files/script/init"
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle

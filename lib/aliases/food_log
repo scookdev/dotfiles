@@ -1,3 +1,4 @@
 #!/bin/sh
 
 alias ate=${DOTFILES_ROOT}/script/ate
+alias foodlog="open ~/Desktop/food-log.txt"
