@@ -1,0 +1,3 @@
+#!/bin/sh
+
+alias glink="$DOTFILES_ROOT/script/glink"
