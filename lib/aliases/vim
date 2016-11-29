@@ -2,5 +2,5 @@
 
 alias vim="nvim"
 alias vi="nvim"
-alias vimrc="vim ~/.vimrc"
+alias vimrc="$EDITOR ~/.vimrc"
 
