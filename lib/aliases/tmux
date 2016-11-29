@@ -1,4 +1,9 @@
 #!/bin/sh
+#
+# Opens/creates a tmux session.
+# If no parameter is given, an existing session will be loaded if available
+#
+# Usage t [session_name]
 
 t(){
   local target=$1
