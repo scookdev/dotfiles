@@ -9,6 +9,8 @@ plugins=(
   rails
   vi-mode
   fasd
+  osx
+  history-substring-search
 )
 
 # Sometimes carriage returns are ^M.  Specify that it's a return
