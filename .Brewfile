@@ -15,6 +15,7 @@ brew "docker"
 brew "docker-compose"
 brew "docker-machine"
 brew "automake"
+brew "jq"
 
 brew "redis", restart_service: true
 brew "imagemagick"
