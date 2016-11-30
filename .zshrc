@@ -2,15 +2,17 @@ source "$HOME/.files/lib/globals"
 
 local plugins
 plugins=(
-  git
   bundler
-  gem
-  ruby
-  rails
-  vi-mode
   fasd
-  osx
+  gem
+  git
   history-substring-search
+  osx
+  rails
+  ruby
+  vi-mode
+  zsh-nvm
+  zsh_reload
 )
 
 # Sometimes carriage returns are ^M.  Specify that it's a return

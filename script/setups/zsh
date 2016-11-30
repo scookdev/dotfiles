@@ -25,5 +25,5 @@ fi
 
 # Set up honukai theme, deleting any existing one
 zsh_theme_location=~/.oh-my-zsh/themes/honukai.zsh-theme
-rm -f $zsh_theme_location
+if [ ! -L "$zsh_theme_location" ]; then rm -f $zsh_theme_location; fi
 link_safe $DOTFILES_ROOT/zsh/honukai.zsh-theme $zsh_theme_location
