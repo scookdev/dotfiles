@@ -1,3 +1,8 @@
+tap "caskroom/cask"
+tap "homebrew/services"
+tap "caskroom/fonts"
+brew "cask"
+
 brew "zsh"
 brew "mas"
 brew "dockutil"
@@ -37,6 +42,9 @@ cask "slack"
 cask "github-desktop"
 cask "screenhero"
 cask "flux"
+
+# Fonts
+cask "font-dejavu-sans"
 
 # Low priority stuff
 brew "keybase"
