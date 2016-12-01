@@ -10,6 +10,7 @@ plugins=(
   osx
   rails
   ruby
+  tmuxinator
   vi-mode
   zsh-nvm
   zsh_reload

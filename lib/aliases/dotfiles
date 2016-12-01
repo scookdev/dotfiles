@@ -8,7 +8,11 @@ alias zshrc="$EDITOR ~/.zshrc"
 # List all setups
 setups() {
   for setup in ${DOTFILES_ROOT}/script/setups/*; do
-    if [ -f "$setup" ]; then echo $(basename "$setup"); fi
+    if [ -f "$setup" ]; then basename "$setup"; fi
   done
+}
+
+up() {
+  ${DOTFILES_ROOT}/script/update
 }
 
