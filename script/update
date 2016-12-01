@@ -21,7 +21,7 @@ npm update --global
 npm upgrade --global
 
 script/title "Updating Ruby"
-script/setup/rbenv
+script/setups/rbenv
 
 script/title "Updating RubyGems software..."
 gem update --system
