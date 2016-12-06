@@ -1,0 +1,5 @@
+#!/bin/sh
+
+alias rc="bundle exec rails c"
+alias rs="bundle exec rails s"
+alias rdm="bundle exec rake db:migrate"

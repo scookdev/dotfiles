@@ -1,5 +1,6 @@
 #!/bin/sh
 
+alias g="git"
 alias git="hub"
 alias gpr="git pull-request"
 alias gl="git log --decorate --graph --oneline"
@@ -13,6 +14,9 @@ alias gca="git commit --amend --no-edit"
 alias gco="git checkout"
 alias gb="git branch"
 alias gd="git diff"
+alias grc="git rebase --continue"
+alias gra="git rebase --abort"
+alias gsh="git stash"
 
 # "Git Nuke" deletes everything but current branch
 alias gnuke="git branch | grep -v '^*' | xargs git branch -D "
