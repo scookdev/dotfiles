@@ -2,6 +2,9 @@
 
 source "$HOME/.files/script/init"
 
+brew update
+brew doctor
+
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
 brew bundle
