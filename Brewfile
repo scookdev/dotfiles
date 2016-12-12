@@ -27,6 +27,8 @@ brew 'zsh'
 brew 'ghi'
 brew 'git-extras'
 brew 'tmux'
+brew 'rbenv-default-gems'
+brew 'rbenv-ctags'
 
 brew 'openssl'
 brew 'pinentry'
