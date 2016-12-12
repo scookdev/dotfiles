@@ -7,6 +7,7 @@ source "$HOME/.files/script/init"
 link_dotfiles
 
 link_safe $DOTFILES_ROOT/Brewfile
+link_safe $DOTFILES_ROOT/default-gems $(rbenv root)/default-gems
 
 mkdir_safe $HOME/Library/LaunchAgents
 tmp_reaper_plist="Library/LaunchAgents/com.binarymason.tmpreaper.plist"
