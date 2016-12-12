@@ -16,7 +16,7 @@ export DOTFILES_ROOT="$HOME/.files"
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # set up rbenv
-export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:/usr/local/bin:$PATH"
 
 export GOPATH=~/dev/go
 

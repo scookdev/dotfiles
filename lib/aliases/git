@@ -17,6 +17,7 @@ alias gd="git diff"
 alias grc="git rebase --continue"
 alias gra="git rebase --abort"
 alias gsh="git stash"
+alias gsha="git stash apply"
 
 # "Git Nuke" deletes everything but current branch
 alias gnuke="git branch | grep -v '^*' | xargs git branch -D "
