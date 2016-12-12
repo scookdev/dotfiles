@@ -3,3 +3,9 @@ osx_image: xcode8
 script: script/cibuild
 env:
   SHELL: zsh
+git:
+  submodules: false
+# Change SSH submodules to HTTP per https://goo.gl/064FGx
+before_install:
+  -sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  -git submodule update --init --recursive
