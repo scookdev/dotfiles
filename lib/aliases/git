@@ -1,23 +1,30 @@
 #!/bin/sh
 
 alias g="git"
-alias git="hub"
-alias gpr="git pull-request"
-alias gl="git log --decorate --graph --oneline"
-alias gh="log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short"
-alias gpl="git pull"
-alias gp="git push"
-alias gs='git status -sb'
-alias gppf="git push --force-with-lease"  #  "pretty please force push"
+alias gaa="git add --all"
+alias gb="git branch"
 alias gc="git commit"
 alias gca="git commit --amend --no-edit"
 alias gco="git checkout"
-alias gb="git branch"
 alias gd="git diff"
-alias grc="git rebase --continue"
+alias gh="log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short"
+alias git="hub"
+alias gl="git log --decorate --graph --oneline"
+alias gp="git push"
+alias gpl="git pull"
+alias gppf="git push --force-with-lease"  #  "pretty please force push"
+alias gpr="git pull-request"
 alias gra="git rebase --abort"
+alias grc="git rebase --continue"
+alias gs='git status -sb'
 alias gsh="git stash"
 alias gsha="git stash apply"
+
+alias fixup="gaa && gca && gppf"
+
+alias qa="git checkout qa"
+alias dev="git checkout development"
+alias master="git checkout master"
 
 # "Git Nuke" deletes everything but current branch
 alias gnuke="git branch | grep -v '^*' | xargs git branch -D "
