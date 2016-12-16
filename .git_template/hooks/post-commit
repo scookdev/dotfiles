@@ -1,15 +1,4 @@
 #!/bin/sh
 #
-
-# RESCUE TIME
-# REQUIRED FIELDS - Today's date and commit message
-MESSAGE=$(git log -1 HEAD --pretty=format:%s)
-DATE_TODAY=$(date +"%Y-%m-%d %H:%M:%S")
-
-# OPTIONAL - Label
-LABEL='code commit'
-
-curl --data "key=$RESCUE_TIME_API_KEY&highlight_date=$DATE_TODAY&description=$MESSAGE&source=$LABEL" https://www.rescuetime.com/anapi/highlights_post
-
 # Fork ctags in background
 .git/hooks/ctags >/dev/null 2>&1 &
