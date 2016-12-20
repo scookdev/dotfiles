@@ -6,7 +6,6 @@ alias gb="git branch"
 alias gc="git commit"
 alias gca="git commit --amend --no-edit"
 alias gcb="git checkout -b"
-alias gco="git checkout"
 alias gd="git diff"
 alias gh="log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short"
 alias git="hub"
@@ -38,6 +37,9 @@ alias gnuke="git branch | grep -v '^*' | xargs git branch -D "
 #     awk '{print $1}' | xargs git branch -D
 # }
 
+
+unalias gco
+gco() { git checkout $1 2> /dev/null || git checkout -b $1; }
 
 gclone() { git clone git@github.com:$1/$2.git && cd $(basename $2); }
 
