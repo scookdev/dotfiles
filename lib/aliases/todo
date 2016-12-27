@@ -1,0 +1,10 @@
+#!/bin/sh
+
+local todo_path=$HOME/Desktop/todo.txt
+
+todo() {
+  timestamp=$(date +"%m/%d/%Y %H:%M")
+  echo "$timestamp -- ${*}" >> "$todo_path"
+}
+
+todos() { if [ -f "$todo_path" ]; then cat "$todo_path"; fi }
