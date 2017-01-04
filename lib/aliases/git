@@ -37,6 +37,7 @@ alias gnuke="git branch | grep -v '^*' | xargs git branch -D "
 #     awk '{print $1}' | xargs git branch -D
 # }
 
+alias contributors=" git --no-pager log -s --format='%ae' | sort -u "
 
 unalias gco
 gco() { git checkout $1 2> /dev/null || git checkout -b $1; }
