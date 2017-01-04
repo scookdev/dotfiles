@@ -4,6 +4,7 @@ alias dotfiles="cd $DOTFILES_ROOT"
 alias setup="$DOTFILES_ROOT/script/setup"
 alias nalias="$EDITOR ~/.files/lib/aliases"
 alias zshrc="$EDITOR ~/.zshrc"
+alias zshenv="$EDITOR ~/.zshenv"
 alias rz="source ~/.zshrc"
 
 # List all setups
