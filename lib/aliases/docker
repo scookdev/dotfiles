@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Stops and removes all running docker containers
+dnuke() {
+  if [[ "$(docker ps -aq)" > /dev/null ]] ; then
+    docker stop "$(docker ps -a -q)" && docker rm "$(docker ps -a -q)"
+  fi
+}
