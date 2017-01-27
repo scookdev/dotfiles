@@ -17,6 +17,9 @@ fi
 # Source dotfiles init stuff
 source "$HOME/.files/script/init"
 
+# Setup essential things first
+"$DOTFILES_ROOT"/script/setups/symlinks
+
 if [ ! -z "$target" ]; then
   "$DOTFILES_ROOT"/script/setups/"$target"
   echo ""
