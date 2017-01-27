@@ -1,1 +1,0 @@
-/Users/johnmason/.files/.vim/vimrc

@@ -4,6 +4,9 @@
 
 source "$HOME/.files/script/init"
 
+# Create this symlink before linking dotfiles
+link_safe $DOTFILES_ROOT/.vim/vimrc $DOTFILES_ROOT/.vimrc
+
 link_dotfiles
 
 link_safe $DOTFILES_ROOT/Brewfile
