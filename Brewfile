@@ -43,7 +43,6 @@ brew 'heroku'
 brew 'htop'
 brew 'jq'
 brew 'keybase'
-brew 'macvim', args: ['with-override-system-vim']
 
 brew 'mas'
 brew 'node'
