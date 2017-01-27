@@ -3,10 +3,10 @@
 
 ### Installation
 
-(This runs `script/setup`)
+(This runs `script/bootstrap`)
 
 ```sh
 
-curl -L https://git.io/v1eCy | sh
+curl -L https://git.io/vDfi2 | bash
 
 ```

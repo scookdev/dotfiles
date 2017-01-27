@@ -22,7 +22,6 @@ source "$HOME/.files/script/init"
 
 if [ ! -z "$target" ]; then
   "$DOTFILES_ROOT"/script/setups/"$target"
-  echo ""
   echo "✓"
 else
   for setup in "$DOTFILES_ROOT"/script/setups/*; do
@@ -30,7 +29,6 @@ else
     if [ -f "$setup" ]; then
       "$DOTFILES_ROOT"/script/title "Setting up $(basename $setup)"
       $setup
-      echo ""
       echo "✓"
     fi
   done
