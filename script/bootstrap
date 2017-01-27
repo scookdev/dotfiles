@@ -174,7 +174,7 @@ if [ -n "$STRAP_GITHUB_USER" ]; then
     fi
     (
       cd ~/.files
-      for i in script/setup script/bootstrap; do
+      for i in script/setup; do
         if [ -f "$i" ] && [ -x "$i" ]; then
           log "Running dotfiles $i:"
           "$i" 2>/dev/null
