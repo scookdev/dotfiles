@@ -9,6 +9,7 @@ brew 'cask'
 # Essentials
 brew 'git'
 brew 'hub'
+brew 'vim'
 tap 'universal-ctags/universal-ctags'
 
 brew 'autoconf'
