@@ -7,6 +7,9 @@ if  [ ! command -v nvim &> /dev/null ] ; then
   brew install neovim/neovim/neovim --env=std
 fi
 
+pip3 install neovim
+gem install neovim
+
 mkdir_safe ~/.config
 link_safe $(dot vim) ~/.config/nvim
 link_safe $(dot vim/vimrc) ~/.config/nvim/init.vim
