@@ -3,7 +3,8 @@
 source "$HOME/.files/script/init"
 
 if  [ ! command -v nvim &> /dev/null ] ; then
-  brew install neovim/neovim/neovim
+  # Changing env to std is hack around lua problems
+  brew install neovim/neovim/neovim --env=std
 fi
 
 mkdir_safe ~/.config
