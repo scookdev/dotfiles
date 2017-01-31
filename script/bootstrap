@@ -226,6 +226,7 @@ then
     fi
   fi
 elif [ "$STRAP_GITHUB_AUTH" = "ssh" ]
+  SSH_REMOTE_URL="git@github.com:$STRAP_GITHUB_USER/dotfiles.git"
 then
   echo
   log "Using SSH. Checking credentials:"
@@ -235,7 +236,11 @@ then
     ssh-keygen -t rsa -b 4096 -C "$STRAP_GIT_EMAIL"
     eval "$(ssh-agent -s)"
     ssh-add ~/.ssh/id_rsa
+    pbcopy < ~/.ssh/id_rsa.pub
     log "You must add SSH key to GitHub https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/"
+    log "Copied ~/.ssh/id_rsa.pub to clipboard"
+    git remote set-url origin "$SSH_REMOTE_URL"
+    log "Changed remote url to use ssh"
   fi
 else
   echo
