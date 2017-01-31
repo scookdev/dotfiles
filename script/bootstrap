@@ -212,7 +212,8 @@ if [ "$STRAP_GITHUB_AUTH" = "https" ]
 then
   if git credential-osxkeychain 2>&1 | grep $Q "git.credential-osxkeychain"
   then
-    if [ "$(git config --global credential.helper)" != "osxkeychain" ]
+    helper="$(git config --global credential.helper)"
+    if [ ! "$helper" > /dev/null ] && [ "$helper" != "osxkeychain" ]
     then
       git config --global credential.helper osxkeychain
     fi
