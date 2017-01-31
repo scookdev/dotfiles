@@ -165,7 +165,7 @@ if [ -n "$STRAP_GITHUB_USER" ]; then
     log "Fetching $STRAP_GITHUB_USER/dotfiles from GitHub:"
     if [ ! -d "$HOME/.files" ]; then
       log "Cloning to ~/.files:"
-      git clone $Q "$DOTFILES_URL" ~/.files
+      git clone --recursive $Q "$DOTFILES_URL" ~/.files
     else
       (
         cd ~/.files
