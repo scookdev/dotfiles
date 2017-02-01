@@ -11,6 +11,8 @@ export DOTFILES_ROOT="$HOME/.files"
    export EDITOR='vim'
  fi
 
+export HOMEBREW_GITHUB_API_TOKEN=$(cat ~/.secrets/github-token)
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 

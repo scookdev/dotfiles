@@ -1,0 +1,20 @@
+#!/bin/sh
+
+TOKEN_PATH=$HOME/.secrets/github-token
+
+if [ ! -f "$TOKEN_PATH" ]; then
+  echo "Create a GitHub Personal Access Token with *public* scope"
+  echo "by going to https://github.com/settings/tokens"
+  echo "and enter it below:"
+
+  if [ "$TRAVIS" != "true" ]; then
+    read -r token
+  else
+    token=""
+  fi
+
+  echo "$token" > "$TOKEN_PATH"
+  echo "Token saved as $TOKEN_PATH."
+else
+  echo "Token already set as $TOKEN_PATH."
+fi
