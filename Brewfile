@@ -10,6 +10,8 @@ brew 'cask'
 brew 'git'
 brew 'hub'
 brew 'vim'
+brew 'dinghy'
+brew 'boot2docker'
 tap 'universal-ctags/universal-ctags'
 
 brew 'autoconf'
