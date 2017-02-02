@@ -3,6 +3,7 @@
 [user]
 	name = John Mason
 	email = john@johnmason.io
+	signingkey = 0D3959BB
 [core]
 	editor = nvim
 	autocrlf = input
@@ -18,7 +19,7 @@
 [credential]
 	helper = cache
 [commit]
-	gpgsign = false
+	gpgsign = true
 [init]
 	templatedir = ~/.git_template
 [gpg]
