@@ -20,3 +20,8 @@ if [ "$(rbenv global)" = "system" ]; then
     rbenv rehash
   fi
 fi
+
+# Install rbenv-default-gems
+if [ ! -d $(rbenv root)/plugins/rbenv-default-gems ]; then
+  git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems
+fi
