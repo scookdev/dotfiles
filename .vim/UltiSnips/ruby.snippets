@@ -1,0 +1,20 @@
+snippet --
+puts "-"
+pp ${1:<something>}
+puts "-"
+endsnippet
+
+snippet RSpec
+require "rails_helper"
+
+RSpec.describe ${1:"something"} do
+  $0
+end
+endsnippet
+
+snippet "\b(case|sw(itch)?)" "case <variable> when <expression> ... end" r
+case ${1:variable}
+when ${2:expression}
+$0
+end
+endsnippet
