@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# source ~/.zshrc
+#
+# Zsh tab completion is sometimes broken out of the box.
+# See http://stackoverflow.com/a/22753363
+# if ! compaudit ; then
+  # compaudit | xargs chmod g-w
+# fi
+
+echo "Setup disabled."
+echo 'Run `compaudit | xargs chmod g-w` if (git) hub completions are not working'
