@@ -344,11 +344,6 @@ augroup configgroup
     autocmd InsertLeave * :set nonumber relativenumber
 augroup END
 
-augroup railsgroup
-  " run bundle install every time Gemfile is changed
-  autocmd BufWritePost Gemfile :! bundle install
-augroup END
-
 " automatically fix typos for markdown files
 autocmd filetype markdown
       \ :call AutoCorrect() |
