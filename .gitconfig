@@ -35,6 +35,9 @@
 	token = !security find-internet-password -a binarymason -s github.com -l 'ghi token' -w
 [alias]
 	ctags = !.git/hooks/ctags
+	co = checkout
+	b = branch
+	s = status
 [merge "railsschema"]
         name = newer Rails schema version
         driver = "ruby -e '\n\
@@ -45,3 +48,5 @@
           end\n\
           File.open(%(%A), %(w)) {|f| f.write(b)}\n\
           exit 1 if b.include?(%(<)*%L)'"
+[branch]
+	autosetuprebase = always
