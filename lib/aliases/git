@@ -26,6 +26,9 @@ alias qa="git checkout qa"
 alias dev="git checkout development"
 alias master="git checkout master"
 
+alias grm="git rebase master"
+alias grim="git rebase -i master"
+
 # "Git Nuke" deletes everything but current branch
 alias gnuke="git branch | grep -v '^*' | xargs git branch -D "
 
