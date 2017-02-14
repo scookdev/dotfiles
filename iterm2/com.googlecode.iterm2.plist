@@ -823,13 +823,6 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0x68-0x40000</key>
-		<dict>
-			<key>Action</key>
-			<integer>10</integer>
-			<key>Text</key>
-			<string>[104;5u</string>
-		</dict>
 		<key>0x9-0x40000</key>
 		<dict>
 			<key>Action</key>
@@ -997,9 +990,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 806 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 156 796 473 0 0 2560 1440 </string>
+	<string>269 172 796 473 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2560 -142 730 502 2560 -142 1440 877 </string>
+	<string>0 4 730 502 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -5133,7 +5126,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-02-02T21:18:20Z</date>
+	<date>2017-02-10T17:46:33Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>

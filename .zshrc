@@ -29,6 +29,7 @@ bindkey '\e[B' history-search-forward
 source $ZSH/oh-my-zsh.sh
 source "$DOTFILES_ROOT/script/setups/shell"
 source "$DOTFILES_ROOT/script/setups/aliases"
+source "$DOTFILES_ROOT/script/setups/tmux"
 
 source $HOME/.zshenv
 
