@@ -232,6 +232,9 @@ nnoremap <C-n> :call NERDTreeToggleInCurDir()<cr>
 " Yank all in buffer
 nnoremap yab ggyG
 
+" Delete all in buffer
+nnoremap dab ggdG
+
 " Git grep current word
 nnoremap <silent> <leader>gp yiw:Ggrep <c-r>"<cr>
 
