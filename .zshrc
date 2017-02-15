@@ -35,3 +35,6 @@ source $HOME/.zshenv
 
 # Source iterm2 shell integration if available
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+
+# Init dinghy env if dinghy exists
+if command -v dinghy > /dev/null ; then [ -z "$DOCKER_MACHINE"] && $(dinghy shellinit) ; fi
