@@ -16,3 +16,4 @@ t(){
   fi
 }
 
+alias tc="$EDITOR ~/.tmux.conf"
