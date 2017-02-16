@@ -12,6 +12,8 @@ link_dotfiles
 link_safe $DOTFILES_ROOT/Brewfile
 link_safe $DOTFILES_ROOT/default-gems $(rbenv root)/default-gems
 
+mkdir_safe $HOME/.secrets
+
 # Dinghy
 mkdir_safe $HOME/.dinghy
 link_safe $DOTFILES_ROOT/dinghy-preferences.yml $HOME/.dinghy/preferences.yml
