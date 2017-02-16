@@ -19,7 +19,8 @@
 [credential]
 	helper = cache
 [commit]
-	gpgsign = true
+	gpgsign = false
+	template = /Users/binarymason/.gitmessage
 [init]
 	templatedir = ~/.git_template
 [gpg]
