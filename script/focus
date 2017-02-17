@@ -3,9 +3,21 @@
 # Starts a RescueTime focus session of 25 minutes
 
 source "$HOME/.secrets/ifttt-maker"
+source "$HOME/.secrets/slack-token"
 
 event="rescue_time_focus_start"
 
 curl -X POST https://maker.ifttt.com/trigger/${event}/with/key/${IFTTT_MAKER_KEY}
 
+SLACK_PRESENCE=away
+setpresenceurl="https://slack.com/api/users.setPresence?token=$SLACK_TOKEN&presence=$SLACK_PRESENCE&pretty=1"
+echo
+echo "Changing slack presence to away"
+curl -X POST "$setpresenceurl"
+
+DO_NOT_DISTURB_MINUTES=25
+echo
+echo "Changing slack to do not disturb"
+dndurl="https://slack.com/api/dnd.setSnooze?token=$SLACK_TOKEN&num_minutes=$DO_NOT_DISTURB_MINUTES&pretty=1"
+curl -X POST "$dndurl"
 
