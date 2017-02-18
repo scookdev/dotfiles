@@ -13,3 +13,6 @@ brew tap homebrew/bundle
  cd "$HOME" || exit
  brew bundle
 )
+
+# Remove outdated formulae
+brew cleanup
