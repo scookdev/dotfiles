@@ -18,6 +18,7 @@ link_safe() {
 
   # A file/dir doesn't already exist or is a symlink that needs an updated path
   if [ ! -e "$DESTINATION_PATH" ] || [[ -L "$DESTINATION_PATH" && "$(readlink "$DESTINATION_PATH")" != "$SOURCE_PATH" ]]; then
+    echo
     echo "Linking $DESTINATION_PATH to $SOURCE_PATH"
     rm -f "$DESTINATION_PATH"
     ln -s "$SOURCE_PATH" "$DESTINATION_PATH"
@@ -38,6 +39,7 @@ link_dotfiles() {
 
 mkdir_safe() {
   if [[ ! -d "$1" ]]; then
+    echo
     echo "Creating $1 directory"
     mkdir -p "$1"
   fi
@@ -45,6 +47,7 @@ mkdir_safe() {
 
 latest_ruby() {
   latest_ruby=$(rbenv install -l | grep -v - | tail -1 )
+  echo
   echo "$latest_ruby" | tr -d '[:space:]'
 }
 
@@ -57,4 +60,6 @@ info() { printf -- "\033[00;34m..\033[0m  %s " "$*"; }
 
 # Happy green checkmark
 ok() { echo "\033[00;32m✓\033[0m"; }
+
+abort() { echo "!!! $*" >&2; exit 1; }
 

@@ -23,6 +23,8 @@ for setup in "$DOTFILES_ROOT"/script/setups/$target; do
     info "Setting up $(basename $setup)"
     $setup
     ok
+  else
+    abort "$setup does not exist"
   fi
 done
 
