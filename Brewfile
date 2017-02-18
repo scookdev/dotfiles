@@ -36,8 +36,6 @@ brew 'pinentry'
 brew 'gpg-agent'
 brew 'gnupg2'
 brew 'pinentry-mac'
-brew 'fzf'
-brew 'mackup'
 
 brew 'go'
 brew 'googler'
