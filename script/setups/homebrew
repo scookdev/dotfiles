@@ -1,6 +1,7 @@
 #!/bin/sh
 
 source "$HOME/.files/script/init"
+echo # newline for asthetics
 
 brew update
 brew doctor
@@ -8,4 +9,7 @@ brew doctor
 # Install all our dependencies with bundle (See Brewfile)
 link_safe $DOTFILES_ROOT/Brewfile
 brew tap homebrew/bundle
-brew bundle
+(
+ cd "$HOME" || exit
+ brew bundle
+)

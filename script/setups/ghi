@@ -9,5 +9,3 @@ fi
 if [ ! command -v ghi &> /dev/null ]; then
   brew install ghi
 fi
-
-echo "ghi set."

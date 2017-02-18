@@ -21,5 +21,3 @@ if [[ $(readlink "$HOME/Dropbox/Desktop") != "$HOME/Desktop" ]]; then
   rm -Rf "$HOME/Dropbox/Desktop/"
   ln -s "$HOME/Desktop" "$HOME/Dropbox/Desktop"
 fi
-
-echo "Dropbox set."

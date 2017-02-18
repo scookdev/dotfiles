@@ -174,13 +174,10 @@ if [ -n "$STRAP_GITHUB_USER" ]; then
     fi
     (
       cd ~/.files
-      for i in script/setup; do
-        if [ -f "$i" ] && [ -x "$i" ]; then
-          log "Running dotfiles $i:"
-          "$i" 2>/dev/null
-          break
+        if [ -f script/setup ] && [ -x script/setup ]; then
+          log "Running dotfiles:"
+          ./script/setup 2>/dev/null
         fi
-      done
     )
     logk
   fi

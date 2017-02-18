@@ -8,5 +8,5 @@
   # compaudit | xargs chmod g-w
 # fi
 
-echo "Setup disabled."
-echo 'Run `compaudit | xargs chmod g-w` if (git) hub completions are not working'
+source "$HOME/.files/script/init"
+sameline "(Setup disabled. See file for instructions.)"

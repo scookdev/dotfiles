@@ -48,8 +48,13 @@ latest_ruby() {
   echo "$latest_ruby" | tr -d '[:space:]'
 }
 
-# Print a string; example: [..] foo
-info () {
-  printf "\r \033[00;34m..\033[0m  $1\n"
-}
+# Print a string with newline
+log() { echo "\033[00;34m..\033[0m  $*"; }
+
+# Print a string without newline
+sameline() { printf -- "%s " "$*"; }
+info() { printf -- "\033[00;34m..\033[0m  %s " "$*"; }
+
+# Happy green checkmark
+ok() { echo "\033[00;32m✓\033[0m"; }
 

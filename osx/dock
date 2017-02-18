@@ -55,7 +55,6 @@ apps=("System Preferences" "Google Chrome" Slack iTerm Spotify)
 
 # Re-add the apps we want
 for app in "${apps[@]}"; do
-  echo "adding $app to dock"
   dockutil --add "/Applications/$app.app"
   sleep 1
 done

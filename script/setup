@@ -5,10 +5,6 @@
 
 set -e
 
-target=$1
-
-echo "Starting setup... $target"
-
 # Bootstrap dotfiles if needed
 if [[ ! -d "$HOME/.files" ]]; then
   git clone https://github.com/binarymason/dotfiles ~/.files
@@ -20,19 +16,15 @@ source "$HOME/.files/script/init"
 # Setup essential things first
 "$DOTFILES_ROOT"/script/setups/symlinks
 
-if [ ! -z "$target" ]; then
-  "$DOTFILES_ROOT"/script/setups/"$target"
-  echo "✓"
-else
-  for setup in "$DOTFILES_ROOT"/script/setups/*; do
-    # Only execute files not directories
-    if [ -f "$setup" ]; then
-      "$DOTFILES_ROOT"/script/title "Setting up $(basename $setup)"
-      $setup
-      echo "✓"
-    fi
-  done
-fi
+target=${1:-*}
+for setup in "$DOTFILES_ROOT"/script/setups/$target; do
+  # Only execute files not directories
+  if [ -f "$setup" ]; then
+    info "Setting up $(basename $setup)"
+    $setup
+    ok
+  fi
+done
 
 "$DOTFILES_ROOT"/script/title "Setup complete."
 
