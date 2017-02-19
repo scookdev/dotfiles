@@ -72,6 +72,12 @@ autocmd VimEnter,BufEnter,WinEnter * call matchadd('ColorColumn', '\%81v', 100)
 set fillchars+=vert:│             " Solid line instead of dashed
 highlight VertSplit ctermbg=bg ctermfg=darkgrey
 
+" A slightly better version than vim-unimpaired's cob
+" Changing background color removes vertsplit styling.
+" Add back manually.
+nnoremap cob :set background=<C-R>=&background == 'dark' ? 'light' : 'dark'<CR><CR>
+      \ :highlight VertSplit ctermbg=bg ctermfg=darkgrey<CR>
+
 " Change cursor shape between insert and normal mode in iTerm2.app
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
