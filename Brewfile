@@ -15,7 +15,7 @@ tap 'universal-ctags/universal-ctags'
 
 brew 'autoconf'
 brew 'automake'
-
+brew 'fzf'
 brew 'browser'
 brew 'diff-so-fancy'
 brew 'docker'
