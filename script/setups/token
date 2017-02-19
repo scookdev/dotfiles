@@ -1,5 +1,6 @@
 #!/bin/sh
 
+source "$HOME/.files/script/init"
 TOKEN_PATH=$HOME/.secrets/github-token
 
 mkdir_safe $HOME/.secrets

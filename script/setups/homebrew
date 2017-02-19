@@ -15,4 +15,5 @@ brew tap homebrew/bundle
 )
 
 # Remove outdated formulae
+log "Running brew cleanup"
 brew cleanup

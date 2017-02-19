@@ -3,6 +3,7 @@
 source "$HOME/.files/script/init"
 
 if [ ! $(brew tap | grep caskroom/fonts) &> /dev/null ]; then
+  echo "Tapping caskroom fonts"
   brew tap "caskroom/fonts"
 fi
 
