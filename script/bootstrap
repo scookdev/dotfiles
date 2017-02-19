@@ -239,11 +239,15 @@ then
     log "You must add SSH key to GitHub https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/"
     log "Copied ~/.ssh/id_rsa.pub to clipboard"
   fi
-  log "Changing remote url to use $SSH_REMOTE_URL"
-  (
-    cd ~/.files
-    git remote set-url origin "$SSH_REMOTE_URL"
-  )
+
+  if ! git ls-remote $SSH_REMOTE_URL &>/dev/null
+  then
+    log "Changing remote url to use $SSH_REMOTE_URL"
+    (
+      cd ~/.files
+      git remote set-url origin "$SSH_REMOTE_URL"
+    )
+  fi
 else
   echo
   abort "Setting up $STRAP_GITHUB_AUTH for authentication is not supported"
