@@ -42,19 +42,27 @@ defaults write com.apple.dock showhidden -bool true
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
 
-# Remove all apps from the dock
-dockutil --list | awk -F"\t" '{print $1}' | while read -r line; do
-  dockutil --remove "$line"
-done
-
-# Give dock time to restart
-sleep 1
 
 # Apps wanted in the dock, in order
 apps=("System Preferences" "Google Chrome" Slack iTerm Spotify)
 
-# Re-add the apps we want
-for app in "${apps[@]}"; do
-  dockutil --add "/Applications/$app.app"
-  sleep 1
-done
+expectedapps=$(for app in "${apps[@]}"; do echo "$app"; done)
+currentapps=$(dockutil --list | sed 's/file:.*$//g' | sed 's/[[:blank:]]*$//g')
+
+# If apps are not correct, run specifications.
+if ! echo "${expectedapps[@]}" "${currentapps[@]}" | tr ' ' '\n' | sort | uniq -u  &>/dev/null
+then
+  echo "Setting up dock!"
+  # Remove all apps from the dock
+  dockutil --list | awk -F"\t" '{print $1}' | while read -r line; do
+    dockutil --remove "$line"
+  done
+
+# Give dock time to restart
+sleep 1
+  # Re-add the apps we want
+  for app in "${apps[@]}"; do
+    dockutil --add "/Applications/$app.app"
+    sleep 1
+  done
+fi
