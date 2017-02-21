@@ -48,7 +48,9 @@ filetype plugin indent on
 syntax enable
 
 set t_Co=256
-colorscheme solarized
+
+" Use silent to squelch warnings when solarized is not installed.
+silent! colorscheme solarized
 set background=dark
 
 set ttyfast                       " faster redraw
@@ -70,7 +72,7 @@ autocmd VimEnter,BufEnter,WinEnter * call matchadd('ColorColumn', '\%81v', 100)
 
 " Make vertical splits look less obtrusive
 set fillchars+=vert:│             " Solid line instead of dashed
-highlight VertSplit ctermbg=bg ctermfg=darkgrey
+silent! highlight VertSplit ctermbg=bg ctermfg=darkgrey
 
 " A slightly better version than vim-unimpaired's cob
 " Changing background color removes vertsplit styling.

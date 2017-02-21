@@ -18,6 +18,11 @@ if ! gem list neovim > /dev/null; then
   gem install neovim
 fi
 
+# Install plugins if they aren't already installed
+if [ ! -d "$HOME/.files/.vim/plugged" ]; then
+  nvim +PlugInstall +qall
+fi
+
 mkdir_safe ~/.config
 link_safe $(dot vim) ~/.config/nvim
 link_safe $(dot vim/vimrc) ~/.config/nvim/init.vim
