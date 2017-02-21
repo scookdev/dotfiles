@@ -350,7 +350,7 @@ augroup configgroup
     autocmd BufWritePost * Neomake
 
     autocmd BufEnter *.zsh-theme setlocal filetype=zsh
-    autocmd BufEnter Guardfile setlocal filetype=ruby
+    autocmd BufEnter Guardfile,.pryrc setlocal filetype=ruby
     autocmd BufEnter,FocusGained * checktime
 
     " Make ?s and :s part of words
