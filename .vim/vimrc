@@ -307,6 +307,8 @@ nnoremap <leader>f :CtrlPTag<cr>
 " List buffers
 nnoremap <leader>l :ls<cr>
 
+" Change hashrocket style hashes to json style with surrounding space.
+nnoremap <leader>rh :%s/:\([^ ]*\)\(\s*\)=>/ \1: /g<CR>:%s/\(\S\)\(}\)/\1 \2/g<CR>
 
 " -----------------------------------------------------------------------------
 "  Functions
