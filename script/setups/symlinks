@@ -14,9 +14,11 @@ link_safe $DOTFILES_ROOT/default-gems $(rbenv root)/default-gems
 
 mkdir_safe $HOME/.secrets
 
-# Dinghy
 mkdir_safe $HOME/.dinghy
 link_safe $DOTFILES_ROOT/dinghy-preferences.yml $HOME/.dinghy/preferences.yml
+
+mkdir_safe ~/.ssh
+link_safe $DOTFILES_ROOT/.ssh/config ~/.ssh/config
 
 mkdir_safe $HOME/Library/LaunchAgents
 tmp_reaper_plist="Library/LaunchAgents/com.binarymason.tmpreaper.plist"
