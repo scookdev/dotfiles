@@ -41,6 +41,7 @@ brew 'heroku'
 brew 'htop'
 brew 'jq'
 cask 'keybase'
+cask 'licecap'
 
 brew 'mas'
 brew 'node'
