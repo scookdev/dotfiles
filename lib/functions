@@ -47,8 +47,8 @@ mkdir_safe() {
 
 latest_ruby() {
   latest_ruby=$(rbenv install -l | grep -v - | tail -1 )
-  echo
   echo "$latest_ruby" | tr -d '[:space:]'
+  echo
 }
 
 # Print a string with newline

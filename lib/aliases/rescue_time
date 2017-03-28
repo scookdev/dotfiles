@@ -1,3 +1,0 @@
-#!/bin/sh
-
-alias focus=${DOTFILES_ROOT}/script/focus

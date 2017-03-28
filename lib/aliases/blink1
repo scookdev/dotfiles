@@ -1,0 +1,2 @@
+alias green="blink1-tool --green"
+alias red="blink1-tool --red"

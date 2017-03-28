@@ -7,6 +7,7 @@ plugins=(
   gem
   git
   history-substring-search
+  bgnotify
   osx
   rails
   ruby

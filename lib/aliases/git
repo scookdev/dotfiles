@@ -43,7 +43,12 @@ alias gnuke="git branch | grep -v '^*' | xargs git branch -D "
 alias contributors=" git --no-pager log -s --format='%ae' | sort -u "
 
 unalias gco 2>/dev/null
-gco() { git checkout $1 2> /dev/null || git checkout -b $1; }
+gco() {
+  git checkout "$@" 2> /dev/null || git checkout -b "$@"
+}
 
 gclone() { git clone git@github.com:$1/$2.git && cd $(basename $2); }
+
+alias browse="hub browse"
+alias pr="hub pull-request"
 
