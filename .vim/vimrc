@@ -3,41 +3,42 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 
 " Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'airblade/vim-gitgutter'                 " Shows a git diff in the gutter (sign column) and stages/undoes hunks
+Plug 'airblade/vim-gitgutter'                                   " Shows a git diff in the gutter (sign column) and stages/undoes hunks
 Plug 'altercation/vim-colors-solarized'
-Plug 'bronson/vim-trailing-whitespace'        " Highlights trailing whitespace in red and provides :FixWhitespace to fix it
-Plug 'christoomey/vim-tmux-navigator'         " Seamless navigation between tmux panes and vim splits
-Plug 'ctrlpvim/ctrlp.vim'                     " Fuzzy file, buffer, mru, tag, etc finder.
-Plug 'ervandew/supertab'                      " Perform all your vim insert mode completions with Tab
-Plug 'gioele/vim-autoswap'                    " Stop the swap file messages. Just switch to the correct window!
-Plug 'jgdavey/vim-blockle'                    " Quickly toggle ruby blocks with Leader b
-Plug 'jiangmiao/auto-pairs'                   " Insert or delete brackets, parens, quotes in pair
-Plug 'junegunn/vim-easy-align'                " A Vim alignment plugin
-Plug 'mxw/vim-jsx'                            " React JSX syntax highlighting and indenting for vim.
-Plug 'neomake/neomake'                        " Async :make and linting framework for Neovim/Vim
-Plug 'othree/html5.vim'                       " HTML5 omnicomplete and syntax
-Plug 'pangloss/vim-javascript'                " Vastly improved Javascript indentation and syntax support
-Plug 'panozzaj/vim-autocorrect'               " Correct common typos and misspellings as you type
-Plug 'pbrisbin/vim-mkdir'                     " Automatically create any non-existent directories before writing the buffer.
-Plug 'rking/ag.vim'                           " Vim plugin for the_silver_searcher, 'ag'
-Plug 'scrooloose/nerdcommenter'               " Vim plugin for intensely orgasmic commenting
-Plug 'scrooloose/nerdtree'                    " A tree explorer plugin for vim.
+Plug 'bronson/vim-trailing-whitespace'                          " Highlights trailing whitespace in red and provides :FixWhitespace to fix it
+Plug 'christoomey/vim-tmux-navigator'                           " Seamless navigation between tmux panes and vim splits
+Plug 'ctrlpvim/ctrlp.vim',                                      " Fuzzy file, buffer, mru, tag, etc finder.
+Plug 'ervandew/supertab'                                        " Perform all your vim insert mode completions with Tab
+Plug 'gioele/vim-autoswap'                                      " Stop the swap file messages. Just switch to the correct window!
+Plug 'jgdavey/vim-blockle', { 'for': 'ruby' }                   " Quickly toggle ruby blocks with Leader b
+Plug 'jiangmiao/auto-pairs'                                     " Insert or delete brackets, parens, quotes in pair
+Plug 'junegunn/vim-easy-align', { 'for': 'ruby' }               " A Vim alignment plugin
+Plug 'mxw/vim-jsx',                                             " React JSX syntax highlighting and indenting for vim.
+Plug 'neomake/neomake'                                          " Async :make and linting framework for Neovim/Vim
+Plug 'othree/html5.vim', { 'for': ['javascript', 'html'] }      " HTML5 omnicomplete and syntax
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'                                  " Vastly improved Javascript indentation and syntax support
+Plug 'panozzaj/vim-autocorrect'                                 " Correct common typos and misspellings as you type
+Plug 'pbrisbin/vim-mkdir'                                       " Automatically create any non-existent directories before writing the buffer.
+Plug 'rking/ag.vim'                                             " Vim plugin for the_silver_searcher, 'ag'
+Plug 'scrooloose/nerdcommenter'                                 " Vim plugin for intensely orgasmic commenting
+Plug 'scrooloose/nerdtree'                                      " A tree explorer plugin for vim.
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-Plug 'tpope/gem-ctags'                        " Automatic ctags generation on gem install
-Plug 'tpope/rbenv-ctags'                        " Automatic ctags generation on gem install
-Plug 'tpope/vim-bundler'                      " Lightweight support for Bundler
-Plug 'tpope/vim-endwise'                      " Wisely add 'end' in ruby, endfunction/endif/more in vim script
-Plug 'tpope/vim-eunuch'                       " helpers for UNIX
-Plug 'tpope/vim-fugitive'                     " Git wrapper so awesome, it should be illegal
-Plug 'tpope/vim-rails'                        " Ruby on Rails power tools
-Plug 'tpope/vim-rbenv'                        " Tell vim to use correct ruby version
-Plug 'tpope/vim-repeat'                       " enable repeating supported plugin maps with '.'
-Plug 'tpope/vim-surround'                     " quoting/parenthesizing made simple
-Plug 'tpope/vim-unimpaired'                   " Pairs of handy bracket mappings
-Plug 'vim-airline/vim-airline'                " lean & mean status/tabline for vim that's light as air
-Plug 'vim-airline/vim-airline-themes'         " A collection of themes for vim-airline
+Plug 'tpope/gem-ctags'                                          " Automatic ctags generation on gem install
+Plug 'tpope/rbenv-ctags'                                          " Automatic ctags generation on gem install
+Plug 'tpope/vim-bundler'                                        " Lightweight support for Bundler
+Plug 'tpope/vim-endwise'                                        " Wisely add 'end' in ruby, endfunction/endif/more in vim script
+Plug 'tpope/vim-eunuch'                                         " helpers for UNIX
+Plug 'tpope/vim-fugitive'                                       " Git wrapper so awesome, it should be illegal
+Plug 'tpope/vim-rails'                                          " Ruby on Rails power tools
+Plug 'tpope/vim-rbenv'                                          " Tell vim to use correct ruby version
+Plug 'tpope/vim-repeat'                                         " enable repeating supported plugin maps with '.'
+Plug 'tpope/vim-surround'                                       " quoting/parenthesizing made simple
+Plug 'tpope/vim-unimpaired'                                     " Pairs of handy bracket mappings
+Plug 'vim-airline/vim-airline'                                  " lean & mean status/tabline for vim that's light as air
+Plug 'vim-airline/vim-airline-themes'                           " A collection of themes for vim-airline
 Plug 'vim-scripts/Highlight-UnMatched-Brackets'
-Plug 'Xuyuanp/nerdtree-git-plugin'            " Show git status on NERDTree
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }  " Show git status on NERDTree
 
 call plug#end()
 
@@ -46,8 +47,6 @@ call plug#end()
 " -----------------------------------------------------------------------------
 filetype plugin indent on
 syntax enable
-
-set t_Co=256
 
 " Use silent to squelch warnings when solarized is not installed.
 silent! colorscheme solarized
@@ -68,7 +67,6 @@ set splitbelow                    " Horizontal splits go below
 set diffopt+=vertical             " View diffs in vertical panes
 " Highlight character in 81st column red instead of set colorcolumn
 highlight ColorColumn ctermbg=red ctermfg=white
-autocmd VimEnter,BufEnter,WinEnter * call matchadd('ColorColumn', '\%81v', 100)
 
 " Make vertical splits look less obtrusive
 set fillchars+=vert:│             " Solid line instead of dashed
@@ -81,7 +79,12 @@ nnoremap cob :set background=<C-R>=&background == 'dark' ? 'light' : 'dark'<CR><
       \ :highlight VertSplit ctermbg=bg ctermfg=darkgrey<CR>
 
 " Change cursor shape between insert and normal mode in iTerm2.app
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=2
+" let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+" let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+" if has("nvim")
+"   set termguicolors
+" endif
 
 " NERDTree
 let NERDTreeMinimalUI=1           " remove the 'press ? for help'
@@ -135,11 +138,13 @@ let g:airline#extensions#tabline#show_splits = 0
 let g:neomake_open_list=0
 let g:neomake_javascript_enabled_makers = ['eslint']
 let g:neomake_jsx_enabled_makers = ['eslint']
+let g:neomake_sh_shellcheck_args = neomake#makers#ft#sh#shellcheck()['args'] + ['-e', 'SC1090,SC1091,SC2039']
+let g:neomake_bash_enabled_makers = ['shellcheck']
 
 let g:autoswap_detect_tmux=1      " Tell autoswap to switch to correct tmux window
 
-" let g:used_javascript_libs = 'jquery,underscore,backbone,react'
-" let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+let g:used_javascript_libs = 'jquery,underscore,backbone,react'
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 " set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
@@ -243,6 +248,13 @@ nnoremap yab ggyG
 " Delete all in buffer
 nnoremap dab ggdG
 
+nnoremap <leader>j 0v3e"jdi[]<Esc>"jPA()<Esc>ihttps://technekes.atlassian.net/browse/<Esc>"jp
+
+" 0v3e"jdi[]"jPA()ihttps://technekes.atlassian.new/browse/"jp
+"
+" let jiramapping='0v3e"jdi[]"jPA()ihttps://technekes.atlassian.new/browse/"jp'
+" vnoremap <leader>j :normal jiramapping
+
 " Git grep current word
 nnoremap <silent> <leader>gp yiw:Ggrep <c-r>"<cr>
 
@@ -309,6 +321,9 @@ nnoremap <leader>f :CtrlPTag<cr>
 " List buffers
 nnoremap <leader>l :ls<cr>
 
+" Strip trailing whitespaces
+nnoremap <leader>c :call <SID>StripTrailingWhitespaces()<cr>
+
 " Change hashrocket style hashes to json style with surrounding space.
 nnoremap <leader>rh :%s/:\([^ ]*\)\(\s*\)=>/ \1: /g<CR>:%s/\(\S\)\(}\)/\1 \2/g<CR>
 
@@ -344,7 +359,7 @@ augroup configgroup
     " Clear any lingering autcmd options
     autocmd!
     " Strip trailing whitespace on write
-    autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+    " autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
     " Use neomake on every save
     autocmd BufWritePost * Neomake
@@ -359,20 +374,22 @@ augroup configgroup
     " Use absolute line numbers or relative depending on mode
     autocmd InsertEnter * :set number norelativenumber nohlsearch
     autocmd InsertLeave * :set nonumber relativenumber
+
+    " automatically fix typos for markdown files
+    autocmd filetype markdown
+          \ :call AutoCorrect() |
+          \ :setlocal spell
+
+    " When editing a file, always jump to the last known cursor position.
+    " Don't do it when the position is invalid or when inside an event handler
+    " (happens when dropping a file on gvim).
+    autocmd BufReadPost *
+          \ if line("'\"") > 0 && line("'\"") <= line("$") |
+          \   exe "normal g`\"" |
+          \ endif
+
+    autocmd VimEnter,BufEnter,WinEnter * call matchadd('ColorColumn', '\%81v', 100)
 augroup END
-
-" automatically fix typos for markdown files
-autocmd filetype markdown
-      \ :call AutoCorrect() |
-      \ :setlocal spell
-
-" When editing a file, always jump to the last known cursor position.
-" Don't do it when the position is invalid or when inside an event handler
-" (happens when dropping a file on gvim).
-autocmd BufReadPost *
-      \ if line("'\"") > 0 && line("'\"") <= line("$") |
-      \   exe "normal g`\"" |
-      \ endif
 
 " -----------------------------------------------------------------------------
 "  Configurations
