@@ -1,8 +1,0 @@
-#!/bin/sh
-
-source "$HOME/.files/script/init"
-
-if [ ! $(command -v tmuxinator) &> /dev/null ]; then
-  gem install tmuxinator
-  tmuxinator doctor
-fi

@@ -1,8 +1,0 @@
-#!/bin/sh
-
-source "$HOME/.files/script/init"
-
-if [ ! -f ~/.iterm2_shell_integration.`basename $SHELL` ]; then
-  curl -L https://iterm2.com/misc/`basename $SHELL`_startup.in \
-  -o ~/.iterm2_shell_integration.`basename $SHELL`
-fi
